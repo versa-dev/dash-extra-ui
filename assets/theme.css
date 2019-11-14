@@ -1,0 +1,136 @@
+body .p-tree {
+    border: 1px solid #c8c8c8;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 0.571em 1em;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+body .p-component {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+body .p-breadcrumb {
+    background-color: #ffffff;
+    border: 1px solid #c8c8c8;
+    padding: 0.571em 1em;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+body .p-breadcrumb ul li .p-menuitem-link {
+    color: #333333;
+    margin: 0;
+    -moz-transition: box-shadow 0.2s;
+    -o-transition: box-shadow 0.2s;
+    -webkit-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+body .p-paginator {
+    background-color: #f4f4f4;
+    border: 1px solid #c8c8c8;
+    padding: 0;
+}
+
+body .p-component {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.content-section.implementation {
+    background-color: #fff;
+}
+
+.p-component {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.p-datascroller .p-datascroller-header {
+    background-color: #f4f4f4;
+    color: #333333;
+    border: 1px solid #c8c8c8;
+    padding: 0.571em 1em;
+    font-weight: 700;
+    border-bottom: 0 none;
+    text-align: center;
+}
+
+body .p-datascroller .p-datascroller-content {
+    padding: 0.571em 1em;
+    border: 1px solid #c8c8c8;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 0.571em 1em;
+}
+
+.p-datascroller .p-datascroller-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.datascroll-demo .car-item {
+    border-bottom: 1px solid #d5d5d5;
+    margin: 0;
+    padding: 1em;
+}
+
+.p-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -.5em;
+    margin-left: -.5em;
+    margin-top: -.5em;
+}
+.datascroll-demo .car-item .p-md-3 {
+    text-align: center;
+}
+
+.p-md-3 {
+    width: 25%;
+}
+
+.p-md-9 {
+    width: 75%;
+}
+
+.p-sm-6 {
+    width: 50%;
+}
+.p-sm-1, .p-sm-2, .p-sm-3, .p-sm-4, .p-sm-5, .p-sm-6, .p-sm-7, .p-sm-8, .p-sm-9, .p-sm-10, .p-sm-11, .p-sm-12 {
+    flex: 0 0 auto;
+}
+.p-lg-1, .p-lg-2, .p-lg-3, .p-lg-4, .p-lg-5, .p-lg-6, .p-lg-7, .p-lg-8, .p-lg-9, .p-lg-10, .p-lg-11, .p-lg-12, .p-md-1, .p-md-2, .p-md-3, .p-md-4, .p-md-5, .p-md-6, .p-md-7, .p-md-8, .p-md-9, .p-md-10, .p-md-11, .p-md-12, .p-sm-1, .p-sm-2, .p-sm-3, .p-sm-4, .p-sm-5, .p-sm-6, .p-sm-7, .p-sm-8, .p-sm-9, .p-sm-10, .p-sm-11, .p-sm-12, .p-xl-1, .p-xl-2, .p-xl-3, .p-xl-4, .p-xl-5, .p-xl-6, .p-xl-7, .p-xl-8, .p-xl-9, .p-xl-10, .p-xl-11, .p-xl-12 {
+    padding: .5em;
+}
+.p-component, .p-component * {
+    box-sizing: border-box;
+}
+.car-item .p-col-10 {
+    font-weight: 700;
+}
+
+.p-grid>.p-col, .p-grid>[class*=p-col] {
+    box-sizing: border-box;
+}
+
+.p-datascroller .p-datascroller-footer {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #c8c8c8;
+    padding: 0.571em 1em;
+    border-top: 0 none;
+}

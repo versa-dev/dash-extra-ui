@@ -13,15 +13,20 @@ which is editable by the user.
 
 Keyword arguments:
 - id (string; optional): The ID used to identify this component in Dash callbacks.
-- label (string; required): A label that will be printed when this component is rendered.
-- value (string; optional): The value displayed in the input."""
+- sitekey (string; optional): The Sitekey is google recaptcha sitekey
+- theme (string; default "light")
+- captchaType (string; default "image")
+- size (string; default "normal")
+- index (number; default 0)
+- language (string; default "en")
+- responsetext (string; optional)"""
     @_explicitize_args
-    def __init__(self, id=Component.UNDEFINED, label=Component.REQUIRED, value=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['id', 'label', 'value']
+    def __init__(self, id=Component.UNDEFINED, sitekey=Component.UNDEFINED, theme=Component.UNDEFINED, captchaType=Component.UNDEFINED, size=Component.UNDEFINED, index=Component.UNDEFINED, language=Component.UNDEFINED, onResponse=Component.UNDEFINED, onExpire=Component.UNDEFINED, responsetext=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['id', 'sitekey', 'theme', 'captchaType', 'size', 'index', 'language', 'responsetext']
         self._type = 'ExtraDashUiComponents'
         self._namespace = 'extra_dash_ui_components'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['id', 'label', 'value']
+        self.available_properties = ['id', 'sitekey', 'theme', 'captchaType', 'size', 'index', 'language', 'responsetext']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')
@@ -29,7 +34,7 @@ Keyword arguments:
         _locals.update(kwargs)  # For wildcard attrs
         args = {k: _locals[k] for k in _explicit_args if k != 'children'}
 
-        for k in ['label']:
+        for k in []:
             if k not in args:
                 raise TypeError(
                     'Required argument `' + k + '` was not specified.')
