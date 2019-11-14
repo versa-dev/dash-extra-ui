@@ -81,7 +81,7 @@ module.exports = (env, argv) => {
                     test: /\.(woff(2)?|ttf|eot|svg)$/i,
                     use: [
                         {
-                            loader: 'url-loader',
+                            loader: 'file-loader',
                         },
                     ],
                 },

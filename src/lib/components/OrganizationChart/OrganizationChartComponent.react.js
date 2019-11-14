@@ -40,7 +40,7 @@ export default class OrganizationChartComponent extends Component {
         const {setProps} = this.props;
         return (
             <div>
-                <OrganizationChart
+                <OrganizationChartNode
                     nodeTemplate={this.nodeTemplate}
                     onSelectionChange={event =>
                         setProps({selection: event.data})

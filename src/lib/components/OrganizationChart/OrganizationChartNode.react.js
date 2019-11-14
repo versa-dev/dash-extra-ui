@@ -304,29 +304,29 @@ export default class OrganizationChart extends Component {
     }
 }
 
+// OrganizationChartNode.defaultProps = {
+//     node: null,
+//     nodeTemplate: null,
+//     root: false,
+//     first: false,
+//     last: false,
+//     selectionMode: null,
+//     onNodeClick: null,
+//     isSelected: null,
+// };
+
+// OrganizationChartNode.propTypes = {
+//     node: PropTypes.any,
+//     nodeTemplate: PropTypes.any,
+//     root: PropTypes.bool,
+//     first: PropTypes.bool,
+//     last: PropTypes.bool,
+//     selectionMode: PropTypes.string,
+//     onNodeClick: PropTypes.func,
+//     isSelected: PropTypes.func,
+// };
+
 OrganizationChartNode.defaultProps = {
-    node: null,
-    nodeTemplate: null,
-    root: false,
-    first: false,
-    last: false,
-    selectionMode: null,
-    onNodeClick: null,
-    isSelected: null,
-};
-
-OrganizationChartNode.propTypes = {
-    node: PropTypes.any,
-    nodeTemplate: PropTypes.any,
-    root: PropTypes.bool,
-    first: PropTypes.bool,
-    last: PropTypes.bool,
-    selectionMode: PropTypes.string,
-    onNodeClick: PropTypes.func,
-    isSelected: PropTypes.func,
-};
-
-OrganizationChart.defaultProps = {
     id: null,
     value: null,
     style: null,
@@ -339,7 +339,7 @@ OrganizationChart.defaultProps = {
     onNodeUnselect: null,
 };
 
-OrganizationChart.propTypes = {
+OrganizationChartNode.propTypes = {
     /**
      * The ID used to identify this component in Dash callbacks.
      */
