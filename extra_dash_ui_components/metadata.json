@@ -33,5 +33,119 @@
         "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
       }
     }
+  },
+  "src/lib/components/OrganizationChart/OrganizationChartComponent.react.js": {
+    "description": "OrganizationChartComponent is a component to nicely display a data tree.\nIt takes a property, `value`, which is the actual data object\ncreates a hierachy tree which is then rendered.\nOther inputs are `selectionMode`, `selection`, `className` and `style`\nwhich are optional. Defaults will be applied unless provided by the user.",
+    "displayName": "OrganizationChartComponent",
+    "methods": [
+      {
+        "name": "nodeTemplate",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "node",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks.",
+        "defaultValue": {
+          "value": "`${Math.random()}`",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "An array of nested TreeNodes"
+      },
+      "selectionMode": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'single'",
+              "computed": false
+            },
+            {
+              "value": "'multiple'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Defines the selection mode, valid values \"single\" or \"multiple\".",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "selection": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "object"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "A single treenode instance or an array to refer to the selections.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks.",
+        "defaultValue": {
+          "value": "() => {}",
+          "computed": false
+        }
+      }
+    }
   }
 }

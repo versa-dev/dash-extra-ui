@@ -1,0 +1,56 @@
+body
+    .p-organizationchart
+    .p-organizationchart-node-content.p-organizationchart-selectable-node:not(.p-highlight):hover {
+    background-color: #eaeaea;
+    color: #333333;
+}
+body .p-organizationchart .p-organizationchart-node-content.p-highlight {
+    background-color: #007ad9;
+    color: #ffffff;
+}
+body
+    .p-organizationchart
+    .p-organizationchart-node-content.p-highlight
+    .p-node-toggler
+    i {
+    color: #00325a;
+}
+body .p-organizationchart .p-organizationchart-line-down {
+    background-color: #c8c8c8;
+}
+body .p-organizationchart .p-organizationchart-line-left {
+    border-right: 1px solid #c8c8c8;
+    border-color: #c8c8c8;
+}
+body .p-organizationchart .p-organizationchart-line-top {
+    border-top: 1px solid #c8c8c8;
+    border-color: #c8c8c8;
+}
+body .p-organizationchart .p-organizationchart-node-content {
+    border: 1px solid #c8c8c8;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 0.571em 1em;
+}
+body .p-organizationchart .p-organizationchart-node-content .p-node-toggler {
+    bottom: -0.8em;
+    margin-left: -0.46em;
+    color: #848484;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-transition: box-shadow 0.2s;
+    -o-transition: box-shadow 0.2s;
+    -webkit-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+}
+body
+    .p-organizationchart
+    .p-organizationchart-node-content
+    .p-node-toggler:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
+    -moz-box-shadow: 0 0 0 0.2em #8dcdff;
+    box-shadow: 0 0 0 0.2em #8dcdff;
+}

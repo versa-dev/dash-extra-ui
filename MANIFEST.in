@@ -2,6 +2,10 @@ include extra_dash_ui_components/extra_dash_ui_components.min.js
 include extra_dash_ui_components/extra_dash_ui_components.min.js.map
 include extra_dash_ui_components/metadata.json
 include extra_dash_ui_components/package-info.json
+include extra_dash_ui_components/nova-light/*.css
+include extra_dash_ui_components/primeicons/fonts/*
+include extra_dash_ui_components/primeicons/raw-svg/*
+include extra_dash_ui_components/primeicons/*.css
 include README.md
 include LICENSE
 include package.json

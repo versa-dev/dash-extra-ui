@@ -1,4 +1,6 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
 export(ExtraDashUiComponents)
+export(OrganizationChartComponent)
 export(extraDashUiComponents)
+export(organizationChartComponent)

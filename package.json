@@ -16,6 +16,11 @@
   "author": "NF <nvfrik@ncsu.edu>",
   "license": "MIT",
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "classnames": "^2.2.6",
+    "file-loader": "^4.2.0",
+    "primeicons": "^2.0.0",
+    "primereact": "^3.3.2",
     "ramda": "^0.26.1"
   },
   "devDependencies": {
