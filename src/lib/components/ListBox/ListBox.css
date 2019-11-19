@@ -1,0 +1,132 @@
+body .p-listbox {
+    padding: 0.25em;
+    width: 10em;
+}
+body .p-listbox .p-listbox-list-wrapper {
+    overflow: auto;
+}
+body .p-listbox .p-listbox-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+body .p-listbox .p-listbox-item {
+    padding: 0.25em;
+    border: 0 none;
+    cursor: pointer;
+    font-weight: normal;
+    margin-bottom: 1px;
+}
+body .p-listbox .p-listbox-item > span {
+    vertical-align: middle;
+}
+body .p-listbox .p-listbox-item:last-child {
+    margin-bottom: 0;
+}
+body .p-listbox.p-disabled .p-listbox-item {
+    cursor: default;
+}
+body .p-listbox-header {
+    margin-bottom: 0.3em;
+    padding: 0.125em 0.2em;
+    position: relative;
+}
+body .p-listbox-header .p-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+body .p-listbox-header .p-listbox-filter-container {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+}
+body .p-listbox-header .p-listbox-filter-container .p-listbox-filter-icon {
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em;
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em;
+}
+body .p-listbox-header .p-inputtext {
+    padding: 0.125em 0.125em 0.125em 1.25em;
+    width: 100%;
+    padding: 0.125em 0.125em 0.125em 1.25em;
+    width: 100%;
+}
+body .p-listbox-header.p-listbox-header-w-checkbox .p-listbox-filter-container {
+    width: calc(100% - 2em);
+}
+body .p-listbox .p-listbox-header .p-listbox-filter-container .p-listbox-filter-icon {
+    top: 50%;
+    left: auto;
+    margin-top: -0.5em;
+    right: 0.5em;
+    color: #007ad9;
+}
+body .p-listbox .p-listbox-header .p-listbox-filter-container input {
+    padding: 0.429em;
+    padding-right: 2em;
+}
+body .p-listbox .p-listbox-list .p-listbox-item.p-highlight {
+    color: #fff;
+    background-color: #007ad9;
+}
+body .p-listbox .p-listbox-list .p-listbox-item {
+    margin: 0;
+    padding: 0.429em 0.857em;
+    border: 0 none;
+    color: #333;
+    background-color: transparent;
+    -moz-transition: background-color 0.2s, box-shadow 0.2s;
+    -o-transition: background-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+body .pi {
+    font-size: 1.25em;
+}
+body .p-inputtext {
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    padding: 0.429em;
+    border: 1px solid #a6a6a6;
+    -moz-transition: border-color 0.2s, box-shadow 0.2s;
+    -o-transition: border-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: border-color 0.2s, box-shadow 0.2s;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+body .p-component {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+.pi {
+    font-family: 'primeicons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}

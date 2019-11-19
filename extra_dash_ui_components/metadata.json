@@ -34,6 +34,1017 @@
       }
     }
   },
+  "src/lib/components/Inputtext/InputText.js": {
+    "description": "InputText Bar.\ndisplays on top of the search box component if filter is set to true",
+    "displayName": "InputText",
+    "methods": [
+      {
+        "name": "onKeyPress",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onInput",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderTooltip",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "onInput": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback to invoke when input is in focus changes.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onKeyPress": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback to invoke when value of input changes.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "keyfilter": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Filter value",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "validateOnly": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Boolean",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "tooltip": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Tooltip text",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "tooltipOptions": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Tooltip options. An object",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/ListBox/ListBox.js": {
+    "description": "ListBox component",
+    "displayName": "ListBox",
+    "methods": [
+      {
+        "name": "renderTooltip",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onOptionClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onOptionTouchEnd",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "option",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onOptionClickSingle",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "option",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onOptionClickMultiple",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "option",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onFilter",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "updateModel",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "value",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "removeOption",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "option",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "isSelected",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "option",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "filter",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "option",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "hasFilter",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "getOptionValue",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "option",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "getOptionLabel",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "option",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Id: Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Selected value to display.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "options": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of objects to display as the available options.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "optionLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Name of the label field of an option when an arbitrary objects instead of SelectItems are used as options.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "itemTemplate": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Function that gets the option and returns the content for it.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "listStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of inner list element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "dataKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A property to uniquely match the value in options for better performance.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "multiple": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When specified, allows selecting multiple values.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "metaKeySelection": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Defines how multiple items can be selected,\nwhen true metaKey needs to be pressed to select or\nunselect an item and when set to false selection of each item can be toggled individually.\nOn touch enabled devices, metaKeySelection is turned off automatically.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "filter": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When specified, displays a filter input at header.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "tabIndex": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Index of the element in tabbing order.",
+        "defaultValue": {
+          "value": "'0'",
+          "computed": false
+        }
+      },
+      "tooltip": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Content of the tooltip.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "tooltipOptions": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Configuration of the tooltip, refer to the tooltip documentation for more information.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback to invoke when value of listbox changes.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When specified, disables the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "listContainerStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Style class of the container."
+      }
+    }
+  },
+  "src/lib/components/ListBox/ListBoxComponent.js": {
+    "description": "Wrapper component for the listbox.Adds custom template and styling",
+    "displayName": "ListBoxComponent",
+    "methods": [
+      {
+        "name": "sampleTemplate",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "option",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Id: Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Selected value to display.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "options": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of objects to display as the available options.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "optionLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Name of the label field of an option when an arbitrary objects instead of SelectItems are used as options."
+      },
+      "itemTemplate": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Function that gets the option and returns the content for it."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "listStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of inner list element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the element."
+      },
+      "dataKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A property to uniquely match the value in options for better performance."
+      },
+      "multiple": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When specified, allows selecting multiple values.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "metaKeySelection": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Defines how multiple items can be selected,\nwhen true metaKey needs to be pressed to select or\nunselect an item and when set to false selection of each item can be toggled individually.\nOn touch enabled devices, metaKeySelection is turned off automatically."
+      },
+      "filter": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When specified, displays a filter input at header.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "tabIndex": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Index of the element in tabbing order."
+      },
+      "tooltip": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Content of the tooltip.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "tooltipOptions": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Configuration of the tooltip, refer to the tooltip documentation for more information."
+      },
+      "onChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback to invoke when value of listbox changes."
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When specified, disables the component.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "listContainerStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Style class of the container.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/ListBox/ListBoxHeader.js": {
+    "description": "Header component of the listbox",
+    "displayName": "ListBoxHeader",
+    "methods": [
+      {
+        "name": "onFilter",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "filter": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "When specified, displays a filter input at header.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When specified, disables the component.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "onFilter": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback to invoke when value of filter list changes",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/ListBox/ListBoxItem.js": {
+    "description": "Component to render individual items in a list box",
+    "displayName": "ListBoxItem",
+    "methods": [
+      {
+        "name": "onClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onTouchEnd",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onKeyDown",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "findNextItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "findPrevItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "option": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Listbox option",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Label to display",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "selected": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Boolean. If the option has been selected or not",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "tabIndex": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Index of the option",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onClick": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback to invoke when the option is clicked.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onTouchEnd": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback to invoke when the option is clicked.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "template": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Template funtion to use",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/OrganizationChart/OrganizationChart.react.js": {
+    "description": "Organization Chart",
+    "displayName": "OrganizationChart",
+    "methods": [
+      {
+        "name": "onNodeClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "node",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "findIndexInSelection",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "node",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "isSelected",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "node",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "An array of nested TreeNodes",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Css classes",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "selectionMode": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Defines the selection mode, valid values \"single\" and \"multiple\".",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "selection": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "A single treenode instance or an array to refer to the selections.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "nodeTemplate": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Template function that gets a node as a parameter and returns a content.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onSelectionChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback to invoke when node selection changes.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onNodeSelect": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback to invoke when a node is unselected.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onNodeUnselect": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback to invoke when a node is selected.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/OrganizationChart/OrganizationChartComponent.react.js": {
     "description": "OrganizationChartComponent is a component to nicely display a data tree.\nIt takes a property, `value`, which is the actual data object\ncreates a hierachy tree which is then rendered.\nOther inputs are `selectionMode`, `selection`, `className` and `style`\nwhich are optional. Defaults will be applied unless provided by the user.",
     "displayName": "OrganizationChartComponent",
@@ -65,10 +1076,13 @@
       },
       "value": {
         "type": {
-          "name": "array"
+          "name": "arrayOf",
+          "value": {
+            "name": "object"
+          }
         },
-        "required": true,
-        "description": "An array of nested TreeNodes"
+        "required": false,
+        "description": "An array of nested TreeNodes. A valid treenode should contain at least a `label` property.\nPlease check on sample data at /sample_data/org_data"
       },
       "selectionMode": {
         "type": {
