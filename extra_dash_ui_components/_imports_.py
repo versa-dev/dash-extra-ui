@@ -6,6 +6,8 @@ from .ListBoxHeader import ListBoxHeader
 from .ListBoxItem import ListBoxItem
 from .OrganizationChart import OrganizationChart
 from .OrganizationChartComponent import OrganizationChartComponent
+from .Rating import Rating
+from .RatingComponent import RatingComponent
 
 __all__ = [
     "ExtraDashUiComponents",
@@ -15,5 +17,7 @@ __all__ = [
     "ListBoxHeader",
     "ListBoxItem",
     "OrganizationChart",
-    "OrganizationChartComponent"
+    "OrganizationChartComponent",
+    "Rating",
+    "RatingComponent"
 ]

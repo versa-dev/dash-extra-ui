@@ -34,8 +34,21 @@ app.layout = html.Div(children=[
         # className='', # css style
 
     ),
+    ex.RatingComponent(
+        id='input4',
+        stars=5, #required default 5
+        value=1, #optional, number. default null
+        # disabled=True, #optional default False
+        readonly=False, #optional default False
+        cancel=True, # optional. Whether or not to display cancel icon. default false
+        # style={}, #optional Inline style
+        # tooltip='test', #optional
+        # tooltipOptions= {}, #optional
+        # className='', # css style
+
+    ),
     html.Div(id='output0'),
-    # html.Div(id='output1'),
+    html.Div(id='output1'),
 ])
 
 
@@ -44,9 +57,9 @@ def display_output0(selection):
     return 'You have selected {}'.format(selection)
 
 
-# @app.callback(Output('output1', 'children'), [Input('input2', 'selectionMode')])
-# def display_output1(selection):
-#     return 'Selection mode: {}'.format(selection)
+@app.callback(Output('output1', 'children'), [Input('input4', 'value')])
+def display_output1(selection):
+    return 'Rating: {}'.format(selection)
 
 
 if __name__ == '__main__':
