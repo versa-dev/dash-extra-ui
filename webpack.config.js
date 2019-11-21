@@ -78,13 +78,22 @@ module.exports = (env, argv) => {
                     ],
                 },
                 {
-                    test: /\.(woff(2)?|ttf|eot|svg|png|jpg|gif)$/i,
+                    test: /\.(woff(2)?|ttf|eot|svg)$/i,
                     use: [
                         {
                             loader: 'url-loader',
                         },
                     ],
                 },
+                
+                {
+                    test: /\.(jpe?g|png|gif|mp3)$/i,
+                    use:[
+                        {
+                            loader: 'file-loader'
+                        }
+                    ]
+                }
             ],
         },
     };
