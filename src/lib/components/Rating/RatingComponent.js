@@ -2,8 +2,11 @@ import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 import Rating from './Rating';
 import './Rating.css';
-// import '../../../../test.css'
 
+
+/**
+ * Rating component
+ */
 export default class RatingComponent extends Component {
     render() {
         console.log(this.props)

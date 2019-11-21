@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import KeyFilter from '../../utils/KeyFilter';
-import Tooltip from '../../utils/ToolTip';
+import PropTypes from 'prop-types';
+import React, {Component} from 'react';
 import DomHandler from '../../utils/DomHandler';
+import KeyFilter from '../../utils/KeyFilter';
 import ObjectUtils from '../../utils/ObjectUtils';
+import Tooltip from '../../utils/ToolTip';
 import './InputText.css';
 
 /**
@@ -12,7 +12,6 @@ import './InputText.css';
  * displays on top of the search box component if filter is set to true
  */
 export class InputText extends Component {
-
     constructor(props) {
         super(props);
         this.onInput = this.onInput.bind(this);

@@ -5,7 +5,7 @@ from dash.development.base_component import Component, _explicitize_args
 
 class RatingComponent(Component):
     """A RatingComponent component.
-
+Rating component
 
 Keyword arguments:
 - id (string; optional): Unique identifier of the element.

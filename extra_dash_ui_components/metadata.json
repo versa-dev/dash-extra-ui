@@ -1,4 +1,795 @@
 {
+  "src/lib/components/Button/Button.js": {
+    "description": "Component to render a button element",
+    "displayName": "Button",
+    "methods": [
+      {
+        "name": "renderTooltip",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderIcon",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderLabel",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Text of the button.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "icon": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Name of the icon.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "iconPos": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Position of the icon, valid values are \"left\" and \"right\".",
+        "defaultValue": {
+          "value": "'left'",
+          "computed": false
+        }
+      },
+      "tooltip": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Content of the tooltip.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "tooltipOptions": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Configuration of the tooltip, refer to the tooltip documentation for more information.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/Carousel/Carousel.js": {
+    "description": "The main carousel component",
+    "displayName": "Carousel",
+    "methods": [
+      {
+        "name": "step",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "dir",
+            "type": null
+          },
+          {
+            "name": "page",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "calculatePosition",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "navBackward",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          },
+          {
+            "name": "page",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "navForward",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          },
+          {
+            "name": "page",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onDotClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          },
+          {
+            "name": "page",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onTransitionEnd",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onTouchStart",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onTouchMove",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onTouchEnd",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "changePageOnTouch",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          },
+          {
+            "name": "diff",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "bindDocumentListeners",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "unbindDocumentListeners",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "isVertical",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "isCircular",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "getPage",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "getTotalDots",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "isAutoplay",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "startAutoplay",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "stopAutoplay",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "createStyle",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderItems",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderHeader",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderFooter",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderContent",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderBackwardNavigator",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderForwardNavigator",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderDot",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderDots",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "An array of objects to display.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "page": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Index of the first item.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "header": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Label of header.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "footer": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Label of footer.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "itemTemplate": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Function that gets an item in the value and returns the content for it.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "circular": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Defines if scrolling would be infinite.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "autoplayInterval": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Time in milliseconds to scroll items automatically.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "numVisible": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of items per page.",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "numScroll": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of items to scroll.",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "responsiveOptions": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of options for responsive design.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "orientation": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Specifies the layout of the component, valid values are \"horizontal\" and \"vertical\".",
+        "defaultValue": {
+          "value": "'horizontal'",
+          "computed": false
+        }
+      },
+      "verticalViewPortHeight": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Height of the viewport in vertical layout.",
+        "defaultValue": {
+          "value": "'300px'",
+          "computed": false
+        }
+      },
+      "contentClassName": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of main content.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "containerClassName": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the viewport container.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "dotsContainerClassName": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the paginator items.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onPageChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback to invoke after scroll.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/Carousel/CarouselComponent.js": {
+    "description": "WrapperComponent on the Carousel component\nAdds callback",
+    "displayName": "CarouselComponent",
+    "methods": [
+      {
+        "name": "carTemplate",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "car",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "An array of objects to display.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "page": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Index of the first item.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "header": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Label of header.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "footer": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Label of footer.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "circular": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Function that gets an item in the value and returns the content for it.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "autoplayInterval": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Time in milliseconds to scroll items automatically.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "numVisible": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of items per page.",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "numScroll": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of items to scroll.",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "responsiveOptions": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of options for responsive design.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "orientation": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Specifies the layout of the component, valid values are \"horizontal\" and \"vertical\".",
+        "defaultValue": {
+          "value": "'horizontal'",
+          "computed": false
+        }
+      },
+      "verticalViewPortHeight": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Height of the viewport in vertical layout.",
+        "defaultValue": {
+          "value": "'300px'",
+          "computed": false
+        }
+      },
+      "contentClassName": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of main content.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "containerClassName": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the viewport container.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "dotsContainerClassName": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the paginator items.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks.",
+        "defaultValue": {
+          "value": "() => {}",
+          "computed": false
+        }
+      },
+      "clicked": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/ExtraDashUiComponents.react.js": {
     "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
     "displayName": "ExtraDashUiComponents",
@@ -1369,7 +2160,7 @@
     }
   },
   "src/lib/components/Rating/RatingComponent.js": {
-    "description": "",
+    "description": "Rating component",
     "displayName": "RatingComponent",
     "methods": [],
     "props": {
