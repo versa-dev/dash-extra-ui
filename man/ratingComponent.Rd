@@ -6,7 +6,7 @@
 \title{RatingComponent component}
 
 \description{
-
+Rating component
 }
 
 \usage{
