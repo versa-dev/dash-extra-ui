@@ -32,17 +32,26 @@ _this_module = _sys.modules[__name__]
 _js_dist = [
     {
         'relative_package_path': 'extra_dash_ui_components.min.js',
-        
+
         'namespace': package_name
     },
     {
         'relative_package_path': 'extra_dash_ui_components.min.js.map',
-        
+
         'namespace': package_name
     }
 ]
 
-_css_dist = []
+_css_dist = [
+    {
+        'relative_package_path': 'nova-light/theme.css',
+        'namespace': package_name
+    },
+    {
+        'relative_package_path': 'primeicons/primeicons.css',
+        'namespace': package_name
+    }
+]
 
 
 for _component in __all__:

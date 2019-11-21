@@ -4,14 +4,12 @@ import {
     BreadcrumbsDashUiComponents,
     CarouselComponent,
     DataScrollerDashUiComponents,
+    OrganizationChartComponent,
     PaginatorDashUiComponents,
     TreeDashUiComponents,
 } from '../lib';
 import {carsCarousel} from './sampleData/carouselData';
 import orgSample from './sampleData/orgChartData';
-import { CarouselComponent, DataScrollerDashUiComponents, PaginatorDashUiComponents, TreeDashUiComponents } from '../lib';
-
-
 
 class App extends Component {
     constructor() {
@@ -129,124 +127,6 @@ class App extends Component {
 
     render() {
         // console.log(this.state.carData.data);
-        const data = [
-            {
-                key: '0',
-                label: 'Documents',
-                data: 'Documents Folder',
-                icon: 'pi pi-fw pi-inbox',
-                children: [
-                    {
-                        key: '0-0',
-                        label: 'Work',
-                        data: 'Work Folder',
-                        icon: 'pi pi-fw pi-cog',
-                        children: [
-                            {
-                                key: '0-0-0',
-                                label: 'Expenses.doc',
-                                icon: 'pi pi-fw pi-file',
-                                data: 'Expenses Document',
-                            },
-                            {
-                                key: '0-0-1',
-                                label: 'Resume.doc',
-                                icon: 'pi pi-fw pi-file',
-                                data: 'Resume Document',
-                            },
-                        ],
-                    },
-                    {
-                        key: '0-1',
-                        label: 'Home',
-                        data: 'Home Folder',
-                        icon: 'pi pi-fw pi-home',
-                        children: [
-                            {
-                                key: '0-1-0',
-                                label: 'Invoices.txt',
-                                icon: 'pi pi-fw pi-file',
-                                data: 'Invoices for this month',
-                            },
-                        ],
-                    },
-                ],
-            },
-            {
-                key: '1',
-                label: 'Events',
-                data: 'Events Folder',
-                icon: 'pi pi-fw pi-calendar',
-                children: [
-                    {
-                        key: '1-0',
-                        label: 'Meeting',
-                        icon: 'pi pi-fw pi-calendar-plus',
-                        data: 'Meeting',
-                    },
-                    {
-                        key: '1-1',
-                        label: 'Product Launch',
-                        icon: 'pi pi-fw pi-calendar-plus',
-                        data: 'Product Launch',
-                    },
-                    {
-                        key: '1-2',
-                        label: 'Report Review',
-                        icon: 'pi pi-fw pi-calendar-plus',
-                        data: 'Report Review',
-                    },
-                ],
-            },
-            {
-                key: '2',
-                label: '<div>adsaf</div>Movies',
-                data: 'Movies Folder',
-                icon: 'pi pi-fw pi-star',
-                children: [
-                    {
-                        key: '2-0',
-                        icon: 'pi pi-fw pi-star',
-                        label: 'Al Pacino',
-                        data: 'Pacino Movies',
-                        children: [
-                            {
-                                key: '2-0-0',
-                                label: 'Scarface',
-                                icon: 'pi pi-fw pi-video',
-                                data: 'Scarface Movie',
-                            },
-                            {
-                                key: '2-0-1',
-                                label: 'Serpico',
-                                icon: 'pi pi-fw pi-video',
-                                data: 'Serpico Movie',
-                            },
-                        ],
-                    },
-                    {
-                        key: '2-1',
-                        label: 'Robert De Niro',
-                        icon: 'pi pi-fw pi-star',
-                        data: 'De Niro Movies',
-                        children: [
-                            {
-                                key: '2-1-0',
-                                label: 'Goodfellas',
-                                icon: 'pi pi-fw pi-video',
-                                data: 'Goodfellas Movie',
-                            },
-                            {
-                                key: '2-1-1',
-                                label: 'Untouchables',
-                                icon: 'pi pi-fw pi-video',
-                                data: 'Untouchables Movie',
-                            },
-                        ],
-                    },
-                ],
-            },
-        ];
 
         const items = [
             {label: 'Categories'},
@@ -408,30 +288,6 @@ class App extends Component {
             },
         ];
 
-        const items = [
-            {label: 'Categories'},
-            {label: 'Sports'},
-            {label: 'Football'},
-            {label: 'Countries'},
-            {label: 'Spain'},
-            {label: 'F.C. Barcelona'},
-            {label: 'Squad'},
-            {
-                label: 'Lionel Messi',
-                url: 'https://en.wikipedia.org/wiki/Lionel_Messi',
-            },
-        ];
-
-        const home = {
-            icon: 'tumb tumb-home',
-            url: 'https://github.com/nfrik/extra_dash_ui_components.git',
-            label: 'Home',
-        };
-
-        const footer = (
-            <button ref={el => (this.loadButton = el)}> Load </button>
-        );
-
         return (
             <div>
                 <CarouselComponent
@@ -441,10 +297,10 @@ class App extends Component {
                     // className="custom-carousel"
                     responsiveOptions={responsiveOptions}
                     header={'customHeader'}
-                    page={this.state.page}
-                    setProps={this.setProps}
-                    // circular={true}
-                    // autoplayInterval={2000}
+                    // page={this.state.page}
+                    // setProps={this.setProps}
+                    circular={true}
+                    autoplayInterval={2000}
                 />
                 {/* <RatingComponent
                     value={this.state.value}
@@ -465,13 +321,12 @@ class App extends Component {
                     disabled={false}
                     tooltip={'Hey'}
                 /> */}
-                {/* <OrganizationChartComponent
-
+                <OrganizationChartComponent
                     setProps={this.setProps}
                     value={this.state.data1}
-                    selectionMode='multiple'
+                    selectionMode="multiple"
                     selection={this.state.selection}
-                /> */}
+                />
                 {/* <ExtraDashUiComponents
                     setProps={this.setProps}
                     value={this.state.value}

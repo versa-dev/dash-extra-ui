@@ -21,5 +21,4 @@ export {
     BreadcrumbsDashUiComponents,
     PaginatorDashUiComponents,
     DataScrollerDashUiComponents,
-    OrganizationChartComponent,
 };
