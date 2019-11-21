@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {InputText} from '../Inputtext/InputText';
+import React, { Component } from 'react';
+import { InputText } from '../Inputtext/InputText';
 
 
 /**

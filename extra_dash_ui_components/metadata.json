@@ -1161,5 +1161,339 @@
         }
       }
     }
+  },
+  "src/lib/components/Rating/Rating.js": {
+    "description": "Rating component\nDisplays rating",
+    "displayName": "Rating",
+    "methods": [
+      {
+        "name": "rate",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "i",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "clear",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onStarKeyDown",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "value",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onCancelKeyDown",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderStars",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderCancelIcon",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderTooltip",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Value of the rating.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When present, it specifies that the element should be disabled.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "readonly": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When present, changing the value is not possible.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "stars": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of stars.",
+        "defaultValue": {
+          "value": "5",
+          "computed": false
+        }
+      },
+      "cancel": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When specified a cancel icon is displayed to allow removing the value.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "ClassName of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "tooltip": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Content of the tooltip.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "tooltipOptions": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Configuration of the tooltip, refer to the tooltip documentation for more information.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback to invoke on value change.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/Rating/RatingComponent.js": {
+    "description": "",
+    "displayName": "RatingComponent",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Value of the rating.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When present, it specifies that the element should be disabled.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "readonly": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When present, changing the value is not possible.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "stars": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of stars.",
+        "defaultValue": {
+          "value": "5",
+          "computed": false
+        }
+      },
+      "cancel": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When specified a cancel icon is displayed to allow removing the value.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "ClassName of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "tooltip": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Content of the tooltip.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "tooltipOptions": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Configuration of the tooltip, refer to the tooltip documentation for more information.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks.",
+        "defaultValue": {
+          "value": "() => {}",
+          "computed": false
+        }
+      }
+    }
   }
 }

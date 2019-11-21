@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
 import React, {Component} from 'react';
-import OrganizationChart from './OrganizationChart.react.js';
-import './OrganizationChart.css';
 import '../../../../extra_dash_ui_components/nova-light/theme.css';
 import '../../../../extra_dash_ui_components/primeicons/primeicons.css';
-
+import './OrganizationChart.css';
+import OrganizationChart from './OrganizationChart.react.js';
 
 /**
  * OrganizationChartComponent is a component to nicely display a data tree.
@@ -14,7 +13,6 @@ import '../../../../extra_dash_ui_components/primeicons/primeicons.css';
  * which are optional. Defaults will be applied unless provided by the user.
  */
 export default class OrganizationChartComponent extends Component {
-
     nodeTemplate = node => {
         if (node.type === 'person') {
             return (
@@ -80,7 +78,10 @@ OrganizationChartComponent.propTypes = {
     /**
      * A single treenode instance or an array to refer to the selections.
      */
-    selection: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.object)]),
+    selection: PropTypes.oneOfType([
+        PropTypes.object,
+        PropTypes.arrayOf(PropTypes.object),
+    ]),
     /**
      * Style class of the component.
      */

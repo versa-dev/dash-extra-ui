@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import ObjectUtils from '../../utils/ObjectUtils';
-import {ListBoxItem} from './ListBoxItem';
-import {ListBoxHeader} from './ListBoxHeader';
 import Tooltip from '../../utils/ToolTip';
+import { ListBoxHeader } from './ListBoxHeader';
+import { ListBoxItem } from './ListBoxItem';
 
 /**
  * ListBox component

@@ -4,6 +4,7 @@ import {
     ExtraDashUiComponents,
     OrganizationChartComponent,
     ListBoxComponent,
+    RatingComponent,
 } from '../lib';
 import orgSample from './sampleData/orgChartData';
 import {cities, cars} from './sampleData/listComponentData';
@@ -21,13 +22,21 @@ class App extends Component {
     }
 
     setProps(newProps) {
+        console.log(newProps);
         this.setState(newProps);
     }
 
     render() {
         return (
             <div>
-                <ListBoxComponent
+                <RatingComponent
+                    value={this.state.value}
+                    setProps={this.setProps}
+                    cancel={true}
+                    stars={3}
+
+                />
+                {/* <ListBoxComponent
                     id={'idk'}
                     value={this.state.value}
                     filter={true}
@@ -39,7 +48,7 @@ class App extends Component {
                     multiple={true}
                     disabled={false}
                     tooltip={'Hey'}
-                />
+                /> */}
                 {/* <OrganizationChartComponent
                     setProps={this.setProps}
                     value={this.state.data1}
