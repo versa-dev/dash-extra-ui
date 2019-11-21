@@ -13,13 +13,14 @@ which are optional. Defaults will be applied unless provided by the user.
 
 Keyword arguments:
 - id (string; default `${Math.random()}`): The ID used to identify this component in Dash callbacks.
-- value (list; required): An array of nested TreeNodes
+- value (list of dicts; optional): An array of nested TreeNodes. A valid treenode should contain at least a `label` property.
+Please check on sample data at /sample_data/org_data
 - selectionMode (a value equal to: 'single', 'multiple'; optional): Defines the selection mode, valid values "single" or "multiple".
 - selection (dict | list of dicts; optional): A single treenode instance or an array to refer to the selections.
 - className (string; optional): Style class of the component.
 - style (dict; optional): Inline style of the component."""
     @_explicitize_args
-    def __init__(self, id=Component.UNDEFINED, value=Component.REQUIRED, selectionMode=Component.UNDEFINED, selection=Component.UNDEFINED, className=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+    def __init__(self, id=Component.UNDEFINED, value=Component.UNDEFINED, selectionMode=Component.UNDEFINED, selection=Component.UNDEFINED, className=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
         self._prop_names = ['id', 'value', 'selectionMode', 'selection', 'className', 'style']
         self._type = 'OrganizationChartComponent'
         self._namespace = 'extra_dash_ui_components'
@@ -32,7 +33,7 @@ Keyword arguments:
         _locals.update(kwargs)  # For wildcard attrs
         args = {k: _locals[k] for k in _explicit_args if k != 'children'}
 
-        for k in ['value']:
+        for k in []:
             if k not in args:
                 raise TypeError(
                     'Required argument `' + k + '` was not specified.')

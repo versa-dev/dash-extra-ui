@@ -17,7 +17,8 @@ style=NULL)
 \arguments{
 \item{id}{Character. The ID used to identify this component in Dash callbacks.}
 
-\item{value}{Unnamed list. An array of nested TreeNodes}
+\item{value}{List of named lists. An array of nested TreeNodes. A valid treenode should contain at least a `label` property.
+Please check on sample data at /sample_data/org_data}
 
 \item{selectionMode}{A value equal to: 'single', 'multiple'. Defines the selection mode, valid values "single" or "multiple".}
 

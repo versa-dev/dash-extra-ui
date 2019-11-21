@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
-export class OrganizationChartNode extends Component {
+class OrganizationChartNode extends Component {
     constructor(props) {
         super(props);
         this.node = this.props.node;
@@ -169,6 +169,10 @@ export class OrganizationChartNode extends Component {
         );
     }
 }
+
+/**
+ * Organization Chart
+ */
 
 export default class OrganizationChart extends Component {
     constructor(props) {
@@ -344,6 +348,9 @@ OrganizationChart.propTypes = {
      * An array of nested TreeNodes
      */
     value: PropTypes.any,
+    /**
+     * Inline style of the element.
+     */
     style: PropTypes.object,
     /**
      * Css classes
