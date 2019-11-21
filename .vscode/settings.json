@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "python.pythonPath": "venv/bin/python3",
     "python.linting.pylintEnabled": true,
     "files.exclude": {
@@ -8,7 +7,4 @@
         "**/.settings": true,
         "**/.factorypath": true
     }
-=======
-    "python.pythonPath": "venv\\Scripts\\python.exe"
->>>>>>> create dash components
 }

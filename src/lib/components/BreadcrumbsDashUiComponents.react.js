@@ -47,7 +47,7 @@ export default class BreadcrumbsDashUiComponents extends Component {
 
     renderSeparator() {
         return (
-            <li className="p-breadcrumb-chevron pi pi-chevron-right"></li>
+            <li className="p-breadcrumb-chevron pi pi-breadcrumb-chevron-right"></li>
         );
     }
 

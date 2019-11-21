@@ -2,7 +2,6 @@
 .p-breadcrumb {
     margin: 0;
     padding: 0;
-    padding: .5em;
 }
 
 .p-breadcrumb ul {
@@ -32,8 +31,7 @@
     vertical-align: middle;
 }
 
-.pi-chevron-right {
-    /* content: "\E901"; */
+.pi-breadcrumb-chevron-right {
     border: solid #848484;
     border-width: 0 3px 3px 0;
     display: inline-block;

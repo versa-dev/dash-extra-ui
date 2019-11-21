@@ -209,7 +209,7 @@ app.layout = html.Div(children=[
         autoplayInterval=3000
     ),
     html.Div(id='output0'),
-    html.Div(id='output1'),
+    html.Div(id='output2'),
 ])
 
 # @app.callback(Output('output', 'children'), [Input('paginator-default', 'first'),
@@ -235,8 +235,8 @@ def display_output(text, first, rows):
 # def display_output1(selection):
 #     return 'Rating: {}'.format(selection)
 
-@app.callback(Output('output1', 'children'), [Input('input5', 'clicked')])
-def display_output1(selection):
+@app.callback(Output('output2', 'children'), [Input('input5', 'clicked')])
+def display_output2(selection):
     icon = f"Clicked on: {selection['action'] if selection else 'None'} icon"
     item = f"  of {selection['item'] if selection else 'None'} item"
     return icon + item
@@ -247,7 +247,6 @@ def display_output1(selection):
 def display_output1(first, rows):
     #check value
     return 'First value is: {}, Rows value is {}'.format(first, rows)
-
 
 if __name__ == '__main__':
     app.run_server(debug=True)

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, {Component} from 'react';
-import '../../../../extra_dash_ui_components/nova-light/theme.css';
-import '../../../../extra_dash_ui_components/primeicons/primeicons.css';
+import '../../../../extra_dash_ui_components1/nova-light/theme.css';
+import '../../../../extra_dash_ui_components1/primeicons/primeicons.css';
 import './OrganizationChart.css';
 import OrganizationChart from './OrganizationChart.react.js';
 
