@@ -4,6 +4,7 @@ import {
     BreadcrumbsDashUiComponents,
     CarouselComponent,
     DataScrollerDashUiComponents,
+    OrganizationChartComponent,
     PaginatorDashUiComponents,
     TreeDashUiComponents,
 } from '../lib';
@@ -18,7 +19,6 @@ class App extends Component {
             data: orgSample.data,
             data1: orgSample.data1,
             selection: null,
-
             nodes: null,
             expandedKeys: {},
             first: 0,
@@ -27,12 +27,11 @@ class App extends Component {
             rows2: 10,
             carData: [],
         };
-
-        // this.nodeService = new NodeService();
+        this.recaptchaCallback = this.recaptchaCallback.bind(this);
         this.toggleMovies = this.toggleMovies.bind(this);
         this.onPageChange = this.onPageChange.bind(this);
         this.onPageChange2 = this.onPageChange2.bind(this);
-        this.recaptchaCallback = this.recaptchaCallback.bind(this);
+
         this.carTemplate = this.carTemplate.bind(this);
     }
 
@@ -127,6 +126,32 @@ class App extends Component {
     }
 
     render() {
+        // console.log(this.state.carData.data);
+
+        const items = [
+            {label: 'Categories'},
+            {label: 'Sports'},
+            {label: 'Football'},
+            {label: 'Countries'},
+            {label: 'Spain'},
+            {label: 'F.C. Barcelona'},
+            {label: 'Squad'},
+            {
+                label: 'Lionel Messi',
+                url: 'https://en.wikipedia.org/wiki/Lionel_Messi',
+            },
+        ];
+
+        const home = {
+            icon: 'tumb tumb-home',
+            url: 'https://github.com/nfrik/extra_dash_ui_components.git',
+            label: 'Home',
+        };
+
+        const footer = (
+            <button ref={el => (this.loadButton = el)}> Load </button>
+        );
+
         const responsiveOptions = [
             {
                 breakpoint: '1024px',
@@ -263,30 +288,6 @@ class App extends Component {
             },
         ];
 
-        const items = [
-            {label: 'Categories'},
-            {label: 'Sports'},
-            {label: 'Football'},
-            {label: 'Countries'},
-            {label: 'Spain'},
-            {label: 'F.C. Barcelona'},
-            {label: 'Squad'},
-            {
-                label: 'Lionel Messi',
-                url: 'https://en.wikipedia.org/wiki/Lionel_Messi',
-            },
-        ];
-
-        const home = {
-            icon: 'tumb tumb-home',
-            url: 'https://github.com/nfrik/extra_dash_ui_components.git',
-            label: 'Home',
-        };
-
-        const footer = (
-            <button ref={el => (this.loadButton = el)}> Load </button>
-        );
-
         return (
             <div>
                 <CarouselComponent
@@ -296,10 +297,10 @@ class App extends Component {
                     // className="custom-carousel"
                     responsiveOptions={responsiveOptions}
                     header={'customHeader'}
-                    page={this.state.page}
-                    setProps={this.setProps}
-                    // circular={true}
-                    // autoplayInterval={2000}
+                    // page={this.state.page}
+                    // setProps={this.setProps}
+                    circular={true}
+                    autoplayInterval={2000}
                 />
                 {/* <RatingComponent
                     value={this.state.value}
@@ -320,12 +321,12 @@ class App extends Component {
                     disabled={false}
                     tooltip={'Hey'}
                 /> */}
-                {/* <OrganizationChartComponent
+                <OrganizationChartComponent
                     setProps={this.setProps}
                     value={this.state.data1}
-                    selectionMode='multiple'
+                    selectionMode="multiple"
                     selection={this.state.selection}
-                /> */}
+                />
                 {/* <ExtraDashUiComponents
                     setProps={this.setProps}
                     value={this.state.value}

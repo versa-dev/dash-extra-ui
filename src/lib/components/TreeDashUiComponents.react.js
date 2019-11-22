@@ -28,6 +28,7 @@ export default class TreeDashUiComponents extends Component {
         this.onDropPoint = this.onDropPoint.bind(this);
         this.onFilterInputChange = this.onFilterInputChange.bind(this);
         this.onFilterInputKeyDown = this.onFilterInputKeyDown.bind(this);
+        this.onSelectionChange = this.onSelectionChange.bind(this);
     }
 
     // componentDidMount(){
@@ -52,6 +53,23 @@ export default class TreeDashUiComponents extends Component {
             this.setState({
                 expandedKeys: event.value
             });
+
+            this.props.setProps({
+                expandedKeys: event.value
+            })
+        }
+
+    }
+
+    onSelectionChange(selectValue) {
+        console.log('selecte', selectValue)
+        if(this.props.onSelectionChange)
+        {
+            this.props.onSelectionChange(selectValue)
+        }else{
+            this.props.setProps({
+                selectionKeys: selectValue.value
+            })
         }
     }
 
@@ -320,7 +338,7 @@ export default class TreeDashUiComponents extends Component {
     renderRootChild(node, index, last) {
         return (
             <UITreeNode key={node.key||node.label} node={node} index={index} last={last} path={String(index)} disabled={this.props.disabled} selectionMode={this.props.selectionMode} 
-                    selectionKeys={this.props.selectionKeys} onSelectionChange={this.props.onSelectionChange} metaKeySelection={this.props.metaKeySelection}
+                    selectionKeys={this.props.selectionKeys} onSelectionChange={this.onSelectionChange} metaKeySelection={this.props.metaKeySelection}
                     contextMenuSelectionKey={this.props.contextMenuSelectionKey} onContextMenuSelectionChange={this.props.onContextMenuSelectionChange} onContextMenu={this.props.onContextMenu}
                     propagateSelectionDown={this.props.propagateSelectionDown} propagateSelectionUp={this.props.propagateSelectionUp}
                     onExpand={this.props.onExpand} onCollapse={this.props.onCollapse} onSelect={this.props.onSelect} onUnselect={this.props.onUnselect}

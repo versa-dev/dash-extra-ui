@@ -3372,6 +3372,18 @@
         "returns": null
       },
       {
+        "name": "onSelectionChange",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "selectValue",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
         "name": "onDragStart",
         "docblock": null,
         "modifiers": [],
