@@ -209,7 +209,7 @@
     font-size: 2em;
 } 
 
-.pi-caret-right {
+/* .pi-caret-right {
     width: 0;
     height: 0;
     display: inline-block;
@@ -225,4 +225,4 @@
     border-left-color: black;
     transform: rotate(90deg);
     margin-top: 5px;
-}
+} */
