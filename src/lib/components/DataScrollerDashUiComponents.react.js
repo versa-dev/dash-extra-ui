@@ -143,8 +143,14 @@ export default class DataScrollerDashUiComponents extends Component {
             return;
         }
 
+        // const src = "assets/images" + car.brand + ".png";
+
         return (
             <div className="p-grid car-item">
+                {/* <div className="p-col-12 p-md-3">
+                    <img src={src} alt="Car" />
+                </div> */}
+
                 <div className="p-col-12 p-md-9">
                     <div className="p-grid">
                         <div className="p-col-2 p-sm-6">Vin: </div>

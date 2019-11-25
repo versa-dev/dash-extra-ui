@@ -134,3 +134,23 @@ body .p-datascroller .p-datascroller-content {
     padding: 0.571em 1em;
     border-top: 0 none;
 }
+
+.p-datascroller-list .car-item {
+    border-bottom: 1px solid #d5d5d5;
+    margin: 0;
+    padding: 1em;
+}
+
+.car-details .p-grid.p-nogutter img{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.car-details .p-grid.p-grid.p-nogutter{
+    border: 1px solid #b3c2ca;
+    border-radius: 3px;
+    margin: .3em;
+    text-align: center;
+    padding: 2em 0 2.25em;
+}
