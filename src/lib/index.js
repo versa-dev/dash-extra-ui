@@ -9,6 +9,8 @@ import TreeDashUiComponents from './components/TreeDashUiComponents.react';
 import BreadcrumbsDashUiComponents from './components/BreadcrumbsDashUiComponents.react';
 import PaginatorDashUiComponents from './components/PaginatorDashUiComponents.react';
 import DataScrollerDashUiComponents from './components/DataScrollerDashUiComponents.react';
+import WebcamDashUiComponents from './components/Webcam/WebcamDashUiComponents.react'; 
+import MicrophoneDashUiComponents from './components/Mic/MicrophoneDashUiComponents.react'; 
 
 export {
     // ExtraDashUiComponents,
@@ -21,4 +23,6 @@ export {
     BreadcrumbsDashUiComponents,
     PaginatorDashUiComponents,
     DataScrollerDashUiComponents,
+    WebcamDashUiComponents,
+    MicrophoneDashUiComponents
 };

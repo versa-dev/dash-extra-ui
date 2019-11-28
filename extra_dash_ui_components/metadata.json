@@ -2154,6 +2154,190 @@
       }
     }
   },
+  "src/lib/components/Mic/MicrophoneDashUiComponents.react.js": {
+    "description": "",
+    "displayName": "MicrophoneDashUiComponents",
+    "methods": [
+      {
+        "name": "startRecording",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "stopRecording",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onData",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "recordedBlob",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onStop",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "recordedBlob",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "backgroundColor": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'#FF4081'",
+          "computed": false
+        }
+      },
+      "strokeColor": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'#000000'",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'sound-wave'",
+          "computed": false
+        }
+      },
+      "audioBitsPerSecond": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "128000",
+          "computed": false
+        }
+      },
+      "mimeType": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "\"audio/webm;codecs=opus\"",
+          "computed": false
+        }
+      },
+      "height": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "100",
+          "computed": false
+        }
+      },
+      "record": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "onStop": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onData": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "realData": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "recordedBlob": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "visualSetting": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'sinewave'",
+          "computed": false
+        }
+      },
+      "width": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "640",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/OrganizationChart/OrganizationChart.react.js": {
     "description": "Organization Chart",
     "displayName": "OrganizationChart",
@@ -4770,6 +4954,131 @@
           "value": "null",
           "computed": false
         }
+      }
+    }
+  },
+  "src/lib/components/Webcam/WebcamDashUiComponents.react.js": {
+    "description": "ExampleComponent is an example component.\r\nIt takes a property, `label`, and\r\ndisplays it.\r\nIt renders an input with the property `value`\r\nwhich is editable by the user.",
+    "displayName": "WebcamDashUiComponents",
+    "methods": [
+      {
+        "name": "getScreenshot",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "updateIntervals",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "prevProps",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS class of video element",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "audio": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "enable/disable audio",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "height": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "height of video element",
+        "defaultValue": {
+          "value": "480",
+          "computed": false
+        }
+      },
+      "width": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "width of video element",
+        "defaultValue": {
+          "value": "640",
+          "computed": false
+        }
+      },
+      "screenshotWidth": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "width of screenshot"
+      },
+      "screenshotFormat": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "format of screenshot",
+        "defaultValue": {
+          "value": "\"image/webp\"",
+          "computed": false
+        }
+      },
+      "screenshotQuality": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "quality of screenshot(0 to 1)",
+        "defaultValue": {
+          "value": "0.92",
+          "computed": false
+        }
+      },
+      "screenshotInterval": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "update interval of screenshot in milliseconds"
+      },
+      "screenshot": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "getScreenshot() returns a base64 encoded string of the current webcam\r\nimage. screenshot is the prop updated at fixed interval from calling\r\ngetScreenshot(). It is currently capped at 25 fps."
       }
     }
   }

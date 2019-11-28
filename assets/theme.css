@@ -154,3 +154,8 @@ body .p-datascroller .p-datascroller-content {
     text-align: center;
     padding: 2em 0 2.25em;
 }
+
+audio {
+    width: 300px;
+    height: 54px;
+}

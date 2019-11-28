@@ -7,6 +7,8 @@ import {
     OrganizationChartComponent,
     PaginatorDashUiComponents,
     TreeDashUiComponents,
+    WebcamDashUiComponents,
+    MicrophoneDashUiComponents
 } from '../lib';
 import {carsCarousel} from './sampleData/carouselData';
 import orgSample from './sampleData/orgChartData';
@@ -26,6 +28,7 @@ class App extends Component {
             first2: 0,
             rows2: 10,
             carData: [],
+            screenshot: ""
         };
         this.recaptchaCallback = this.recaptchaCallback.bind(this);
         this.toggleMovies = this.toggleMovies.bind(this);
@@ -57,8 +60,10 @@ class App extends Component {
     }
 
     setProps(newProps) {
-        console.log(newProps);
-        this.setState(newProps);
+        // console.log(newProps);
+        // this.setState({
+        //     screenshot: newProps.screenshot
+        // });
     }
 
     recaptchaCallback(response) {
@@ -321,19 +326,19 @@ class App extends Component {
                     disabled={false}
                     tooltip={'Hey'}
                 /> */}
-                <OrganizationChartComponent
+                {/* <OrganizationChartComponent
                     setProps={this.setProps}
                     value={this.state.data1}
                     selectionMode="multiple"
                     selection={this.state.selection}
-                />
+                /> */}
                 {/* <ExtraDashUiComponents
                     setProps={this.setProps}
                     value={this.state.value}
                 /> */}
                 <BreadcrumbsDashUiComponents model={items} home={home} />
                 <h1>Hello, Dash!</h1>
-                <h3 className="first">Uncontrolled</h3>
+                {/* <h3 className="first">Uncontrolled</h3>
                 <TreeDashUiComponents value={data} {...this.state} />
                 <h3>Controlled</h3>
                 <button onClick={this.toggleMovies}>Toggle Movies</button>
@@ -350,9 +355,9 @@ class App extends Component {
                     totalRecords={120}
                     rowsPerPageOptions={[10, 20, 30]}
                     onPageChange={this.onPageChange}
-                ></PaginatorDashUiComponents>
+                ></PaginatorDashUiComponents> */}
                 {/* <PaginatorDashUiComponents/> */}
-                <h3>Custom Template</h3>
+                {/* <h3>Custom Template</h3>
                 <PaginatorDashUiComponents
                     first={this.state.first2}
                     rows={this.state.rows2}
@@ -360,12 +365,12 @@ class App extends Component {
                     rowsPerPageOptions={[10, 20, 30]}
                     onPageChange={this.onPageChange2}
                     template="FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink"
-                ></PaginatorDashUiComponents>
-                <div className="content-section implementation">
+                ></PaginatorDashUiComponents> */}
+                {/* <div className="content-section implementation">
                     Demo is at the bottom of this page.
-                </div>
+                </div> */}
 
-                <div className="content-section implementation">
+                {/* <div className="content-section implementation">
                     <DataScrollerDashUiComponents
                         value={this.state.carData.data}
                         itemTemplate={this.carTemplate}
@@ -381,8 +386,18 @@ class App extends Component {
                         loader={this.loadButton}
                         footer={footer}
                         header="Click Load Button at Footer to Load More"
-                    />
-                </div>
+                    /> */}
+                {/* </div> */}
+                <WebcamDashUiComponents
+                    id='webcam'
+                    audio={false}
+                    screenshotFormat="image/jpeg"
+                    screenshotWidth={500}
+                    width={500}
+                    height={300}
+                    setProps={this.setProps}
+                />
+                <MicrophoneDashUiComponents/>
             </div>
         );
     }

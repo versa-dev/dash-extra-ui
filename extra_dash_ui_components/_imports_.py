@@ -9,6 +9,7 @@ from .ListBox import ListBox
 from .ListBoxComponent import ListBoxComponent
 from .ListBoxHeader import ListBoxHeader
 from .ListBoxItem import ListBoxItem
+from .MicrophoneDashUiComponents import MicrophoneDashUiComponents
 from .OrganizationChart import OrganizationChart
 from .OrganizationChartComponent import OrganizationChartComponent
 from .CurrentPageReport import CurrentPageReport
@@ -22,6 +23,7 @@ from .Rating import Rating
 from .RatingComponent import RatingComponent
 from .UITreeNode import UITreeNode
 from .TreeDashUiComponents import TreeDashUiComponents
+from .WebcamDashUiComponents import WebcamDashUiComponents
 
 __all__ = [
     "BreadcrumbsDashUiComponents",
@@ -35,6 +37,7 @@ __all__ = [
     "ListBoxComponent",
     "ListBoxHeader",
     "ListBoxItem",
+    "MicrophoneDashUiComponents",
     "OrganizationChart",
     "OrganizationChartComponent",
     "CurrentPageReport",
@@ -47,5 +50,6 @@ __all__ = [
     "Rating",
     "RatingComponent",
     "UITreeNode",
-    "TreeDashUiComponents"
+    "TreeDashUiComponents",
+    "WebcamDashUiComponents"
 ]
