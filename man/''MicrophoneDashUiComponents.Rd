@@ -11,8 +11,8 @@
 
 \usage{
 ''MicrophoneDashUiComponents(id=NULL, backgroundColor=NULL, strokeColor=NULL, className=NULL,
-audioBitsPerSecond=NULL, mimeType=NULL, height=NULL, record=NULL, onStop=NULL,
-onData=NULL, realData=NULL, recordedBlob=NULL, visualSetting=NULL, width=NULL)
+audioBitsPerSecond=NULL, mimeType=NULL, height=NULL, record=NULL, realData=NULL,
+recordedBlob=NULL, visualSetting=NULL, width=NULL)
 }
 
 \arguments{
@@ -31,10 +31,6 @@ onData=NULL, realData=NULL, recordedBlob=NULL, visualSetting=NULL, width=NULL)
 \item{height}{Numeric. }
 
 \item{record}{Logical. }
-
-\item{onStop}{}
-
-\item{onData}{}
 
 \item{realData}{Character. }
 

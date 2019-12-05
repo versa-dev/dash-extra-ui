@@ -1,6 +1,6 @@
 import dash
 import dash_html_components as html
-from dash.dependencies import Input, Output
+from dash.dependencies import Input, Output, State
 
 import extra_dash_ui_components as ex
 
@@ -14,7 +14,7 @@ app.layout = html.Div(children=[
         screenshotFormat="image/jpeg",
         width=500,
         height=300,
-        screenshotInterval=500
+        screenshotInterval=2000
     ),
     html.Div(id='webcam-output'),
     html.H4("Callback value is base64 image"),
@@ -31,6 +31,10 @@ app.layout = html.Div(children=[
         strokeColor='#000',
         backgroundColor='#FF4081'
     ),
+    html.Div(children=[
+        html.Button("Start", id="start-btn"),
+        html.Button("Stop", id="stop-btn"),
+    ], id="react-mic-btns") ,     
     html.Div(id='audio-output'),
     html.Audio(
         id='audio',
@@ -50,9 +54,15 @@ def AudioOutput(value):
 
 @app.callback(Output('audio', 'src'), [Input('microphone', 'recordedBlob')])
 def AudioSrcOutput(value):
-    if value == None :
+    if value == None:
         return ''
     return value['blobURL']
 
+@app.callback(Output('microphone', 'record'), [Input('start-btn', 'n_clicks'), Input('stop-btn', 'n_clicks')], [State("microphone", 'record')])
+def on_click(input1, input2, record):
+    if input2 or input1:
+        return not record
+    return record
+    
 if __name__ == '__main__':
     app.run_server(debug=True)

@@ -2159,20 +2159,6 @@
     "displayName": "MicrophoneDashUiComponents",
     "methods": [
       {
-        "name": "startRecording",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      },
-      {
-        "name": "stopRecording",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      },
-      {
         "name": "onData",
         "docblock": null,
         "modifiers": [],
@@ -2285,20 +2271,6 @@
           "value": "false",
           "computed": false
         }
-      },
-      "onStop": {
-        "type": {
-          "name": "func"
-        },
-        "required": false,
-        "description": ""
-      },
-      "onData": {
-        "type": {
-          "name": "func"
-        },
-        "required": false,
-        "description": ""
       },
       "realData": {
         "type": {

@@ -21,7 +21,7 @@ Keyword arguments:
 - visualSetting (string; default 'sinewave')
 - width (number; default 640)"""
     @_explicitize_args
-    def __init__(self, id=Component.UNDEFINED, backgroundColor=Component.UNDEFINED, strokeColor=Component.UNDEFINED, className=Component.UNDEFINED, audioBitsPerSecond=Component.UNDEFINED, mimeType=Component.UNDEFINED, height=Component.UNDEFINED, record=Component.UNDEFINED, onStop=Component.UNDEFINED, onData=Component.UNDEFINED, realData=Component.UNDEFINED, recordedBlob=Component.UNDEFINED, visualSetting=Component.UNDEFINED, width=Component.UNDEFINED, **kwargs):
+    def __init__(self, id=Component.UNDEFINED, backgroundColor=Component.UNDEFINED, strokeColor=Component.UNDEFINED, className=Component.UNDEFINED, audioBitsPerSecond=Component.UNDEFINED, mimeType=Component.UNDEFINED, height=Component.UNDEFINED, record=Component.UNDEFINED, realData=Component.UNDEFINED, recordedBlob=Component.UNDEFINED, visualSetting=Component.UNDEFINED, width=Component.UNDEFINED, **kwargs):
         self._prop_names = ['id', 'backgroundColor', 'strokeColor', 'className', 'audioBitsPerSecond', 'mimeType', 'height', 'record', 'realData', 'recordedBlob', 'visualSetting', 'width']
         self._type = 'MicrophoneDashUiComponents'
         self._namespace = 'extra_dash_ui_components'

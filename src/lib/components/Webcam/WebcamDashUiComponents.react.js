@@ -15,7 +15,7 @@ export default class WebcamDashUiComponents extends Component {
         this.state = {value: props.value};
 
         this.getScreenshot = this.getScreenshot.bind(this);
-        this.handleScreenshot = setInterval(this.getScreenshot, 1000);  // 25 FPS
+        this.handleScreenshot = setInterval(this.getScreenshot, props.screenshotInterval);  // 25 FPS
     }
 
     getScreenshot(){

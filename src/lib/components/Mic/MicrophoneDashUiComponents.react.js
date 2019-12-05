@@ -10,42 +10,37 @@ export default class MicrophoneDashUiComponents extends React.Component {
         this.state = {
             record: false,
         };
+        this.record = false;
         this.onData = this.onData.bind(this);
         this.onStop = this.onStop.bind(this);
     }
 
-    startRecording = () => {
-        this.setState({
-            record: true,
-        });
-    };
-
-    stopRecording = () => {
-        this.setState({
-            record: false,
-        });
-    };
-
     onData(recordedBlob) {
-        // console.log('chunk of real-time data is: ', recordedBlob);
-        this.props.setProps({
-            realData: "size :" + recordedBlob.size + " type: " + recordedBlob.type
-        })
+        console.log('chunk of real-time data is: ', recordedBlob);
     }
 
     onStop(recordedBlob) {
-        // console.log('recordedBlob is: ', recordedBlob);
+        console.log('recordedBlob is: ', recordedBlob);
         this.props.setProps({
             realData: "Please check audio",
             recordedBlob
         })
     }
 
+    shouldComponentUpdate(nextProps)
+    {
+        return nextProps.record != this.record
+    }
+
     render() {
+
+        this.record = this.props.record
+        
+        console.log("record", this.record)
         return (
             <div>
                 <ReactMic
-                    record={this.state.record}
+                    record={this.record}
                     className={this.props.className}
                     onStop={this.onStop}
                     onData={this.onData}
@@ -56,14 +51,6 @@ export default class MicrophoneDashUiComponents extends React.Component {
                     width={this.props.width}
                     height={this.props.height}
                 />
-                <div className = "react-mic-btns">
-                    <button onClick={this.startRecording} type="button" disabled={this.state.record}>
-                        Start
-                    </button>
-                    <button onClick={this.stopRecording} type="button" disabled={!this.state.record}>
-                        Stop
-                    </button>
-                </div>
             </div>
         );
     }
@@ -78,8 +65,6 @@ MicrophoneDashUiComponents.propTypes = {
     mimeType        : PropTypes.string,
     height          : PropTypes.number,
     record          : PropTypes.bool,
-    onStop          : PropTypes.func,
-    onData          : PropTypes.func,
     realData           : PropTypes.string,
     recordedBlob    : PropTypes.object,
     visualSetting   : PropTypes.string,

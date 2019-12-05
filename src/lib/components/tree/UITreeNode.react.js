@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import DomHandler from '../utils/DomHandler';
+import DomHandler from '../../utils/DomHandler';
 
 export default class UITreeNode extends Component {
     
