@@ -53,6 +53,7 @@ export default class WebcamDashUiComponents extends Component {
             height,
             width,
             screenshotWidth,
+            screenshotHeight,
             screenshotFormat,
             screenshotQuality
         } = this.props;
@@ -65,7 +66,9 @@ export default class WebcamDashUiComponents extends Component {
                 height={height}
                 width={width}
                 screenshotFormat={screenshotFormat}
-                screenshotQuality={screenshotQuality}                                             
+                screenshotQuality={screenshotQuality}   
+                minScreenshotWidth= {screenshotWidth}  
+                minScreenshotHeight={screenshotHeight}                                        
             />
         );
     }
@@ -103,6 +106,11 @@ WebcamDashUiComponents.propTypes = {
     screenshotWidth: PropTypes.number,
 
     /**
+     * width of screenshot
+     */
+    screenshotHeight: PropTypes.number,
+
+    /**
      * format of screenshot
      */
     screenshotFormat: PropTypes.string,
@@ -133,4 +141,6 @@ WebcamDashUiComponents.defaultProps = {
     width: 640,
     screenshotFormat: "image/webp",
     screenshotQuality: 0.92,
+    screenshotWidth: 640,
+    screenshotHeight: 480,
 };

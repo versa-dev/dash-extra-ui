@@ -5014,7 +5014,22 @@
           "name": "number"
         },
         "required": false,
-        "description": "width of screenshot"
+        "description": "width of screenshot",
+        "defaultValue": {
+          "value": "640",
+          "computed": false
+        }
+      },
+      "screenshotHeight": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "width of screenshot",
+        "defaultValue": {
+          "value": "480",
+          "computed": false
+        }
       },
       "screenshotFormat": {
         "type": {

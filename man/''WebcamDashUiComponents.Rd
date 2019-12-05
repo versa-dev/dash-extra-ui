@@ -11,8 +11,8 @@ ExampleComponent is an example component. It takes a property, `label`, and di
 
 \usage{
 ''WebcamDashUiComponents(id=NULL, className=NULL, audio=NULL, height=NULL, width=NULL,
-screenshotWidth=NULL, screenshotFormat=NULL, screenshotQuality=NULL,
-screenshotInterval=NULL, screenshot=NULL)
+screenshotWidth=NULL, screenshotHeight=NULL, screenshotFormat=NULL,
+screenshotQuality=NULL, screenshotInterval=NULL, screenshot=NULL)
 }
 
 \arguments{
@@ -27,6 +27,8 @@ screenshotInterval=NULL, screenshot=NULL)
 \item{width}{Numeric. width of video element}
 
 \item{screenshotWidth}{Numeric. width of screenshot}
+
+\item{screenshotHeight}{Numeric. width of screenshot}
 
 \item{screenshotFormat}{Character. format of screenshot}
 
