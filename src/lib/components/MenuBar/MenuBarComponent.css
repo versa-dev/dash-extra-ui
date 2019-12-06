@@ -1,0 +1,47 @@
+body .p-component {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+body .p-menubar {
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #c8c8c8;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+body .p-menuitem-link {
+    padding: 0.714em 0.857em;
+    color: #333;
+    font-weight: normal;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-transition: background-color 0.2s, box-shadow 0.2s;
+    -o-transition: background-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+body .p-menubar .p-submenu-list {
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #c8c8c8;
+    -webkit-box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
+}
+body .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link {
+    padding: 0.714em 0.857em;
+}
+body .p-menubar .p-menuitem.p-menuitem-active > .p-menuitem-link {
+    background-color: #eaeaea;
+}
+
+body .p-button.p-button-text-icon-left .p-button-text {
+    padding: 0.429em 1em 0.429em 2.25em;
+}
+.p-menubar .p-menuitem-text {
+    vertical-align: middle;
+}

@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\Robinhood\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+    "python.pythonPath": "venv/bin/python",
     "python.linting.pylintEnabled": true,
     "files.exclude": {
         "**/.classpath": true,

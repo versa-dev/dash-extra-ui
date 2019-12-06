@@ -1,0 +1,149 @@
+.p-panelmenu {
+    width: auto;
+}
+
+.p-panelmenu .p-menu-separator {
+    border-width: 1px 0 0 0;
+}
+
+.p-panelmenu .p-panelmenu-content-wrapper {
+    overflow: hidden;
+}
+
+.p-panelmenu .p-panelmenu-header {
+    margin: -1px 0 0 0;
+    zoom: 1;
+}
+
+.p-panelmenu .p-panelmenu-header-link {
+    padding: 0.5em;
+    display: block;
+    text-decoration: none;
+}
+
+.p-panelmenu .p-panelmenu-icon {
+    vertical-align: middle;
+}
+
+.p-panelmenu .p-menuitem-text {
+    vertical-align: middle;
+}
+
+.p-panelmenu .p-menuitem-icon {
+    margin-right: 0.25em;
+    vertical-align: middle;
+}
+
+.p-panelmenu .p-panelmenu-content {
+    padding: 0.25em;
+    border-top: 0;
+    margin-bottom: 1px;
+}
+
+.p-panelmenu .p-submenu-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 1.5em;
+}
+
+.p-panelmenu .p-panelmenu-content > .p-panelmenu-root-submenu.p-submenu-list {
+    margin-left: 0;
+}
+
+.p-panelmenu .p-menuitem {
+    overflow: hidden;
+    margin: 0.125em 0;
+}
+
+.p-panelmenu .p-menuitem-link {
+    padding: 0.25em;
+    display: block;
+    text-decoration: none;
+}
+
+.p-toggleable-content-exit-done {
+    display: none;
+}
+
+.p-toggleable-content-collapsed {
+    display: none;
+}
+
+body .p-component {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+body .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link {
+    padding: 0.714em 0.857em;
+    color: #333333;
+    -moz-transition: background-color 0.2s, box-shadow 0.2s;
+    -o-transition: background-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.p-panelmenu .p-menuitem-link {
+    padding: .25em;
+    display: block;
+    text-decoration: none;
+}
+
+.p-panelmenu .p-menuitem-text, .p-panelmenu .p-panelmenu-icon {
+    vertical-align: middle;
+}
+
+body .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link {
+    padding: 0.714em 0.857em;
+    color: #333333;
+    -moz-transition: background-color 0.2s, box-shadow 0.2s;
+    -o-transition: background-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+body .p-panelmenu .p-panelmenu-content {
+    padding: 0;
+    background-color: #ffffff;
+    border: 1px solid #c8c8c8;
+    margin-top: 0;
+    position: static;
+    border-top: 0 none;
+}
+
+
+body .p-panelmenu .p-panelmenu-header.p-highlight > a {
+    border: 1px solid #007ad9;
+    background-color: #007ad9;
+    color: #ffffff;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+body .p-panelmenu .p-panelmenu-header > a {
+    border: 1px solid #c8c8c8;
+    background-color: #f4f4f4;
+    color: #333333;
+    padding: 0.714em 0.857em;
+    font-weight: 700;
+    position: static;
+    font-size: 14px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-transition: background-color 0.2s, box-shadow 0.2s;
+    -o-transition: background-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.p-panelmenu .p-panelmenu-header-link {
+    padding: .5em;
+    display: block;
+    text-decoration: none;
+}
