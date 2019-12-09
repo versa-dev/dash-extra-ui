@@ -4,8 +4,10 @@ import classNames from 'classnames';
 import {MenubarSub} from './MenubarSub';
 import './MenuBar.css';
 
+/**
+ * MenuBar
+ */
 export class Menubar extends Component {
-
     renderCustomContent() {
         if (this.props.children) {
             return (
@@ -45,13 +47,28 @@ Menubar.defaultProps = {
     model: null,
     style: null,
     className: null,
-    // setProps: null
+    setProps: null
 };
 
 Menubar.propTypes = {
+    /**
+     * Unique identifier of the element.
+     */
     id: PropTypes.string,
+    /**
+     * An array of menuitems.
+     */
     model: PropTypes.array,
+    /**
+     * Inline style of the component.
+     */
     style: PropTypes.object,
+    /**
+     * Style class of the component.
+     */
     className: PropTypes.string,
-    setProps: PropTypes.func.isRequired
+    /**
+     * Callback function
+     */
+    setProps: PropTypes.func.isRequired,
 };

@@ -2154,6 +2154,464 @@
       }
     }
   },
+  "src/lib/components/MenuBar/MenuBar.js": {
+    "description": "MenuBar",
+    "displayName": "Menubar",
+    "methods": [
+      {
+        "name": "renderCustomContent",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "model": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of menuitems.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback function",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/MenuBar/MenuBarComponent.js": {
+    "description": "MenuBarComponent",
+    "displayName": "MenubarComponent",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "model": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of menuitems.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback function",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/MenuBar/MenubarSub.js": {
+    "description": "",
+    "displayName": "MenubarSub",
+    "methods": [
+      {
+        "name": "onItemMouseEnter",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onItemClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onItemKeyDown",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onChildItemKeyDown",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "childListItem",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "expandSubmenu",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "listItem",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "collapseMenu",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "listItem",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "navigateToNextItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "listItem",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "navigateToPrevItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "listItem",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "findNextItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "findPrevItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onLeafClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderSeparator",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderIcon",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderSubmenuIcon",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderSubmenu",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderMenuitem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderMenu",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "model": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "root": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "popup": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "onLeafClick": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": true,
+        "description": ""
+      },
+      "onKeyDown": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "parentActive": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/Mic/MicrophoneDashUiComponents.react.js": {
     "description": "",
     "displayName": "MicrophoneDashUiComponents",
@@ -3156,6 +3614,212 @@
       }
     }
   },
+  "src/lib/components/PanelMenu/PanelMenu.js": {
+    "description": "PanelMenu",
+    "displayName": "PanelMenu",
+    "methods": [
+      {
+        "name": "onItemClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderPanelIcon",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderPanelToggleIcon",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "active",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderPanel",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderPanels",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "model": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of menuitems.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "callback",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/PanelMenu/PanelMenuComponent.js": {
+    "description": "PanelMenuComponent",
+    "displayName": "PanelMenuComponent",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "model": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of menuitems.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "{width: '300px'}",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "callback",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "menuitem": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Current menuitem"
+      },
+      "submenu": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Selected submenu item"
+      }
+    }
+  },
   "src/lib/components/Rating/Rating.js": {
     "description": "Rating component\nDisplays rating",
     "displayName": "Rating",
@@ -3485,6 +4149,218 @@
         "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks.",
         "defaultValue": {
           "value": "() => {}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/Steps/Steps.js": {
+    "description": "Steps",
+    "displayName": "Steps",
+    "methods": [
+      {
+        "name": "itemClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderItems",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "model": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of menuitems.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "activeIndex": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Index of the active item.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "readOnly": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether the items are clickable or not.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onSelect": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback to invoke when the new step is selected.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/Steps/StepsComponent.js": {
+    "description": "WrapperComponent on the Steps component\nAdds callback",
+    "displayName": "StepsComponent",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "model": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of menuitems.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "activeIndex": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Index of the active item.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "readOnly": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether the items are clickable or not.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onSelect": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback when item is selected",
+        "defaultValue": {
+          "value": "null",
           "computed": false
         }
       }

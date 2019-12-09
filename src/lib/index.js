@@ -9,8 +9,8 @@ import TreeDashUiComponents from './components/TreeDashUiComponents.react';
 import BreadcrumbsDashUiComponents from './components/BreadcrumbsDashUiComponents.react';
 import PaginatorDashUiComponents from './components/PaginatorDashUiComponents.react';
 import DataScrollerDashUiComponents from './components/DataScrollerDashUiComponents.react';
-// import WebcamDashUiComponents from './components/Webcam/WebcamDashUiComponents.react'; 
-// import MicrophoneDashUiComponents from './components/Mic/MicrophoneDashUiComponents.react'; 
+import WebcamDashUiComponents from './components/Webcam/WebcamDashUiComponents.react'; 
+import MicrophoneDashUiComponents from './components/Mic/MicrophoneDashUiComponents.react'; 
 import StepsComponent from './components/Steps/StepsComponent'; 
 import MenuBarComponent from './components/MenuBar/MenuBarComponent'; 
 import PanelMenuComponent from './components/PanelMenu/PanelMenuComponent'; 
@@ -26,8 +26,8 @@ export {
     BreadcrumbsDashUiComponents,
     PaginatorDashUiComponents,
     DataScrollerDashUiComponents,
-    // WebcamDashUiComponents,
-    // MicrophoneDashUiComponents,
+    WebcamDashUiComponents,
+    MicrophoneDashUiComponents,
     StepsComponent,
     MenuBarComponent,
     PanelMenuComponent

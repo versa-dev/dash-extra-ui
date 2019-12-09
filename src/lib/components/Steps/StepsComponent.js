@@ -15,7 +15,7 @@ export default class StepsComponent extends Component {
                 model={this.props.model}
                 activeIndex={this.props.activeIndex}
                 onSelect={e => this.props.setProps({activeIndex: e.index})}
-                readOnly={false}
+                readOnly={this.props.readOnly}
                 style={this.props.style}
                 className={this.props.className}
                 id={this.props.id}
@@ -59,4 +59,8 @@ StepsComponent.propTypes = {
      * Style class of the component.
      */
     className: PropTypes.string,
+    /**
+     * Callback when item is selected
+     */
+    onSelect: PropTypes.func
 };

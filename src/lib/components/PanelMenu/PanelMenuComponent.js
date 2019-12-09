@@ -1,135 +1,67 @@
-import React, {Component} from 'react';
-import {PanelMenu} from './PanelMenu';
-// import '../../../../theme.css'
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import { PanelMenu } from './PanelMenu';
 
+
+/**
+ * PanelMenuComponent
+ */
 export default class PanelMenuComponent extends Component {
     constructor() {
         super();
-        this.state = {
-            items: [
-                {
-                    label: 'File',
-                    icon: 'pi pi-fw pi-file',
-                    items: [
-                        {
-                            label: 'New',
-                            icon: 'pi pi-fw pi-plus',
-                            items: [
-                                {
-                                    label: 'Bookmark',
-                                    icon: 'pi pi-fw pi-bookmark',
-                                },
-                                {
-                                    label: 'Video',
-                                    icon: 'pi pi-fw pi-video',
-                                },
-                            ],
-                        },
-                        {
-                            label: 'Delete',
-                            icon: 'pi pi-fw pi-trash',
-                        },
-                        {
-                            label: 'Export',
-                            icon: 'pi pi-fw pi-external-link',
-                        },
-                    ],
-                },
-                {
-                    label: 'Edit',
-                    icon: 'pi pi-fw pi-pencil',
-                    items: [
-                        {
-                            label: 'Left',
-                            icon: 'pi pi-fw pi-align-left',
-                        },
-                        {
-                            label: 'Right',
-                            icon: 'pi pi-fw pi-align-right',
-                        },
-                        {
-                            label: 'Center',
-                            icon: 'pi pi-fw pi-align-center',
-                        },
-                        {
-                            label: 'Justify',
-                            icon: 'pi pi-fw pi-align-justify',
-                        },
-                    ],
-                },
-                {
-                    label: 'Users',
-                    icon: 'pi pi-fw pi-user',
-                    items: [
-                        {
-                            label: 'New',
-                            icon: 'pi pi-fw pi-user-plus',
-                        },
-                        {
-                            label: 'Delete',
-                            icon: 'pi pi-fw pi-user-minus',
-                        },
-                        {
-                            label: 'Search',
-                            icon: 'pi pi-fw pi-users',
-                            items: [
-                                {
-                                    label: 'Filter',
-                                    icon: 'pi pi-fw pi-filter',
-                                    items: [
-                                        {
-                                            label: 'Print',
-                                            icon: 'pi pi-fw pi-print',
-                                        },
-                                    ],
-                                },
-                                {
-                                    icon: 'pi pi-fw pi-bars',
-                                    label: 'List',
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
-                    label: 'Events',
-                    icon: 'pi pi-fw pi-calendar',
-                    items: [
-                        {
-                            label: 'Edit',
-                            icon: 'pi pi-fw pi-pencil',
-                            items: [
-                                {
-                                    label: 'Save',
-                                    icon: 'pi pi-fw pi-calendar-plus',
-                                },
-                                {
-                                    label: 'Delete',
-                                    icon: 'pi pi-fw pi-calendar-minus',
-                                },
-                            ],
-                        },
-                        {
-                            label: 'Archieve',
-                            icon: 'pi pi-fw pi-calendar-times',
-                            items: [
-                                {
-                                    label: 'Remove',
-                                    icon: 'pi pi-fw pi-calendar-minus',
-                                },
-                            ],
-                        },
-                    ],
-                },
-            ],
-        };
+        this.state = {};
     }
 
     render() {
         return (
             <div className="content-section implementation">
-                <PanelMenu model={this.state.items} style={{width: '300px'}} />
+                <PanelMenu
+                    id={this.props.id}
+                    model={this.props.model}
+                    style={this.props.style}
+                    className={this.props.className}
+                    setProps={item => this.props.setProps(item)}
+                />
             </div>
         );
     }
 }
+
+PanelMenuComponent.defaultProps = {
+    id: null,
+    model: null,
+    style: {width: '300px'},
+    className: null,
+    setProps: null
+};
+
+PanelMenuComponent.propTypes = {
+    /**
+     * Unique identifier of the element.
+     */
+    id: PropTypes.string,
+    /**
+     * An array of menuitems.
+     */
+    model: PropTypes.array,
+    /**
+     * Inline style of the component.
+     */
+    style: PropTypes.object,
+    /**
+     * Style class of the component.
+     */
+    className: PropTypes.string,
+    /**
+     * callback
+     */
+    setProps: PropTypes.func,
+    /**
+     * Current menuitem
+     */
+    menuitem: PropTypes.object,
+    /**
+     * Selected submenu item
+     */
+    submenu: PropTypes.object
+};

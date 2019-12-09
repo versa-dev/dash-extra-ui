@@ -23,6 +23,7 @@
     "primereact": "^3.3.2",
     "ramda": "^0.26.1",
     "react-mic": "^12.4.1",
+    "react-transition-group": "^4.3.0",
     "react-webcam": "^4.0.0",
     "url-loader": "^2.3.0"
   },

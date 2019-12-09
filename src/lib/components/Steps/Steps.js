@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './Steps.css';
 
+/**
+ * Steps 
+ */
 export class Steps extends Component {
 
     itemClick(event, item, index) {
