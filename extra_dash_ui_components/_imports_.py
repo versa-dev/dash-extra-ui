@@ -21,9 +21,9 @@ from .PrevPageLink import PrevPageLink
 from .PaginatorDashUiComponents import PaginatorDashUiComponents
 from .Rating import Rating
 from .RatingComponent import RatingComponent
-from .UITreeNode import UITreeNode
 from .TreeDashUiComponents import TreeDashUiComponents
 from .WebcamDashUiComponents import WebcamDashUiComponents
+from .UITreeNode import UITreeNode
 
 __all__ = [
     "BreadcrumbsDashUiComponents",
@@ -49,7 +49,7 @@ __all__ = [
     "PaginatorDashUiComponents",
     "Rating",
     "RatingComponent",
-    "UITreeNode",
     "TreeDashUiComponents",
-    "WebcamDashUiComponents"
+    "WebcamDashUiComponents",
+    "UITreeNode"
 ]
