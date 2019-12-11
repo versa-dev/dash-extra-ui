@@ -32,7 +32,9 @@ PanelMenuComponent.defaultProps = {
     model: null,
     style: {width: '300px'},
     className: null,
-    setProps: null
+    setProps: null,
+    panelmenuItem: null,
+    panelsubmenu: null
 };
 
 PanelMenuComponent.propTypes = {
@@ -59,9 +61,9 @@ PanelMenuComponent.propTypes = {
     /**
      * Current menuitem
      */
-    menuitem: PropTypes.object,
+    panelmenuItem: PropTypes.object,
     /**
      * Selected submenu item
      */
-    submenu: PropTypes.object
+    panelsubmenu: PropTypes.object
 };

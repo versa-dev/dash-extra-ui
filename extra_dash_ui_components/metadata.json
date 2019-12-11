@@ -2262,12 +2262,67 @@
           "computed": false
         }
       },
+      "inputPlaceholder": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Input placeholder",
+        "defaultValue": {
+          "value": "'Search'",
+          "computed": false
+        }
+      },
+      "btnicon": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Button Icon",
+        "defaultValue": {
+          "value": "'pi pi-power-off'",
+          "computed": false
+        }
+      },
+      "btnlabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Button label",
+        "defaultValue": {
+          "value": "'Logout'",
+          "computed": false
+        }
+      },
       "className": {
         "type": {
           "name": "string"
         },
         "required": false,
         "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "menubarItem": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Current Menu object",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "submenubarItem": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Currently selected item",
         "defaultValue": {
           "value": "null",
           "computed": false
@@ -2585,8 +2640,12 @@
         "type": {
           "name": "func"
         },
-        "required": true,
-        "description": ""
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
       },
       "onKeyDown": {
         "type": {
@@ -3804,19 +3863,27 @@
           "computed": false
         }
       },
-      "menuitem": {
+      "panelmenuItem": {
         "type": {
           "name": "object"
         },
         "required": false,
-        "description": "Current menuitem"
+        "description": "Current menuitem",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
       },
-      "submenu": {
+      "panelsubmenu": {
         "type": {
           "name": "object"
         },
         "required": false,
-        "description": "Selected submenu item"
+        "description": "Selected submenu item",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
       }
     }
   },

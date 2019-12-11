@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Button from '../Button/Button';
-import { InputText } from '../Inputtext/InputText';
-import { Menubar } from './MenuBar';
+import {InputText} from '../Inputtext/InputText';
+import {Menubar} from './MenuBar';
 import './MenuBarComponent.css';
 
 /**
@@ -17,9 +17,9 @@ export default class MenubarComponent extends Component {
         return (
             <div className="content-section implementation">
                 <Menubar
-                    model={this.props.items}
+                    model={this.props.model}
                     setProps={props => this.props.setProps(props)}
-                    activeItem={this.props.activeItem}
+                    // activeItem={this.props.activeItem}
                 >
                     <InputText
                         placeholder={this.props.inputPlaceholder}
@@ -36,13 +36,17 @@ export default class MenubarComponent extends Component {
     }
 }
 
-
 MenubarComponent.defaultProps = {
     id: null,
     model: null,
     style: null,
     className: null,
-    setProps: null
+    setProps: null,
+    menubarItem: null,
+    submenubarItem: null,
+    btnlabel: 'Logout',
+    btnicon: 'pi pi-power-off',
+    inputPlaceholder: 'Search',
 };
 
 MenubarComponent.propTypes = {
@@ -57,13 +61,34 @@ MenubarComponent.propTypes = {
     /**
      * Inline style of the component.
      */
+
     style: PropTypes.object,
+    /**
+     * Input placeholder
+     */
+    inputPlaceholder: PropTypes.string,
+    /**
+     * Button Icon
+     */
+    btnicon: PropTypes.string,
+    /**
+     * Button label
+     */
+    btnlabel: PropTypes.string,
     /**
      * Style class of the component.
      */
     className: PropTypes.string,
     /**
+     * Current Menu object
+     */
+    menubarItem: PropTypes.object,
+    /**
+     * Currently selected item
+     */
+    submenubarItem: PropTypes.object,
+    /**
      * Callback function
      */
-    setProps: PropTypes.func.isRequired,
+    setProps: PropTypes.func,
 };

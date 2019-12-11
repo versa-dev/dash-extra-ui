@@ -61,6 +61,7 @@ export class MenubarSub extends Component {
     }
 
     onItemClick = (event, item) => {
+        this.props.setProps({menubarItem: item});
         if (item.disabled) {
             event.preventDefault();
             return;
@@ -93,7 +94,7 @@ export class MenubarSub extends Component {
 
         if (!item.items) {
             this.props.setProps({
-                activeItem: item,
+                submenubarItem: item,
             });
             this.onLeafClick();
         }
@@ -228,7 +229,6 @@ export class MenubarSub extends Component {
     }
 
     onLeafClick() {
-        console.log(this.state)
         this.setState({
             activeItem: null,
         });
@@ -357,6 +357,7 @@ MenubarSub.defaultProps = {
     onLeafClick: null,
     onKeyDown: null,
     parentActive: false,
+    setProps: null,
 };
 
 MenubarSub.propTypes = {
@@ -368,4 +369,5 @@ MenubarSub.propTypes = {
     setProps: PropTypes.func.isRequired,
     onKeyDown: PropTypes.func,
     parentActive: PropTypes.bool,
+    setProps: PropTypes.func.isRequired,
 };

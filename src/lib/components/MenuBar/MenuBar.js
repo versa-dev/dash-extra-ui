@@ -70,5 +70,5 @@ Menubar.propTypes = {
     /**
      * Callback function
      */
-    setProps: PropTypes.func.isRequired,
+    setProps: PropTypes.func,
 };

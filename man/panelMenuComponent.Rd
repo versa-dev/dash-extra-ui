@@ -10,7 +10,8 @@ PanelMenuComponent
 }
 
 \usage{
-panelMenuComponent(id=NULL, model=NULL, style=NULL, className=NULL, menuitem=NULL, submenu=NULL)
+panelMenuComponent(id=NULL, model=NULL, style=NULL, className=NULL, panelmenuItem=NULL,
+panelsubmenu=NULL)
 }
 
 \arguments{
@@ -22,7 +23,7 @@ panelMenuComponent(id=NULL, model=NULL, style=NULL, className=NULL, menuitem=NUL
 
 \item{className}{Character. Style class of the component.}
 
-\item{menuitem}{Named list. Current menuitem}
+\item{panelmenuItem}{Named list. Current menuitem}
 
-\item{submenu}{Named list. Selected submenu item}
+\item{panelsubmenu}{Named list. Selected submenu item}
 }

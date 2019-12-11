@@ -266,7 +266,7 @@ class StepsDemo extends Component {
                     },
                 ],
             },
-        ]
+        ];
 
         return (
             <div>
@@ -277,13 +277,18 @@ class StepsDemo extends Component {
                 />
                 <MenuBarComponent
                     activeItem={this.state.activeItem}
-                    btnlabel="Logout"
-                    btnicon="pi pi-power-off"
-                    inputPlaceholder="Search"
+                    // btnlabel="Logout"
+                    // btnicon="pi pi-power-off"
+                    // inputPlaceholder="Search"
                     setProps={this.setProps}
-                    items={menuitems}
+                    model={menuitems}
                 />
-                <PanelMenuComponent id={'0'} model={panelitems} style={{width: '300px'}}/>
+                <PanelMenuComponent
+                    id={'0'}
+                    model={panelitems}
+                    style={{width: '300px'}}
+                    setProps={this.setProps}
+                />
             </div>
         );
     }

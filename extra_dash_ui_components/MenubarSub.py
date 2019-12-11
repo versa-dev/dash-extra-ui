@@ -27,7 +27,7 @@ Keyword arguments:
         _locals.update(kwargs)  # For wildcard attrs
         args = {k: _locals[k] for k in _explicit_args if k != 'children'}
 
-        for k in ['setProps']:
+        for k in []:
             if k not in args:
                 raise TypeError(
                     'Required argument `' + k + '` was not specified.')

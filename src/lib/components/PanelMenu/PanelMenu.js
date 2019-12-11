@@ -16,8 +16,7 @@ class PanelMenuSub extends Component {
     }
 
     onItemClick(event, item) {
-        console.log(item)
-        this.props.setProps({submenu: item})
+        this.props.setProps({panelsubmenu: item})
         if (item.disabled) {
             event.preventDefault();
             return;
@@ -162,8 +161,7 @@ export class PanelMenu extends Component {
     }
 
     onItemClick(event, item) {
-        console.log(item)
-        this.props.setProps({menuitem: item})
+        this.props.setProps({panelmenuItem: item})
         if (item.disabled) {
             event.preventDefault();
             return;
