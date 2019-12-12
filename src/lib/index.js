@@ -11,6 +11,9 @@ import PaginatorDashUiComponents from './components/PaginatorDashUiComponents.re
 import DataScrollerDashUiComponents from './components/DataScrollerDashUiComponents.react';
 import WebcamDashUiComponents from './components/Webcam/WebcamDashUiComponents.react'; 
 import MicrophoneDashUiComponents from './components/Mic/MicrophoneDashUiComponents.react'; 
+import StepsComponent from './components/Steps/StepsComponent'; 
+import MenuBarComponent from './components/MenuBar/MenuBarComponent'; 
+import PanelMenuComponent from './components/PanelMenu/PanelMenuComponent'; 
 
 export {
     // ExtraDashUiComponents,
@@ -24,5 +27,8 @@ export {
     PaginatorDashUiComponents,
     DataScrollerDashUiComponents,
     WebcamDashUiComponents,
-    MicrophoneDashUiComponents
+    MicrophoneDashUiComponents,
+    StepsComponent,
+    MenuBarComponent,
+    PanelMenuComponent
 };

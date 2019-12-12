@@ -200,7 +200,7 @@
     }
   },
   "src/lib/components/CaptchaDashUiComponents.react.js": {
-    "description": "ExampleComponent is an example component.\r\nIt takes a property, `label`, and\r\ndisplays it.\r\nIt renders an input with the property `value`\r\nwhich is editable by the user.",
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
     "displayName": "CaptchaDashUiComponents",
     "methods": [
       {
@@ -850,7 +850,7 @@
     }
   },
   "src/lib/components/Carousel/CarouselComponent.js": {
-    "description": "WrapperComponent on the Carousel component\r\nAdds callback",
+    "description": "WrapperComponent on the Carousel component\nAdds callback",
     "displayName": "CarouselComponent",
     "methods": [
       {
@@ -1059,7 +1059,7 @@
           "name": "func"
         },
         "required": false,
-        "description": "Dash-assigned callback that should be called to report property changes\r\nto Dash, to make them available for callbacks.",
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks.",
         "defaultValue": {
           "value": "() => {}",
           "computed": false
@@ -1302,7 +1302,7 @@
     }
   },
   "src/lib/components/Inputtext/InputText.js": {
-    "description": "InputText Bar.\r\ndisplays on top of the search box component if filter is set to true",
+    "description": "InputText Bar.\ndisplays on top of the search box component if filter is set to true",
     "displayName": "InputText",
     "methods": [
       {
@@ -1689,7 +1689,7 @@
           "name": "bool"
         },
         "required": false,
-        "description": "Defines how multiple items can be selected,\r\nwhen true metaKey needs to be pressed to select or\r\nunselect an item and when set to false selection of each item can be toggled individually.\r\nOn touch enabled devices, metaKeySelection is turned off automatically.",
+        "description": "Defines how multiple items can be selected,\nwhen true metaKey needs to be pressed to select or\nunselect an item and when set to false selection of each item can be toggled individually.\nOn touch enabled devices, metaKeySelection is turned off automatically.",
         "defaultValue": {
           "value": "false",
           "computed": false
@@ -1887,7 +1887,7 @@
           "name": "bool"
         },
         "required": false,
-        "description": "Defines how multiple items can be selected,\r\nwhen true metaKey needs to be pressed to select or\r\nunselect an item and when set to false selection of each item can be toggled individually.\r\nOn touch enabled devices, metaKeySelection is turned off automatically."
+        "description": "Defines how multiple items can be selected,\nwhen true metaKey needs to be pressed to select or\nunselect an item and when set to false selection of each item can be toggled individually.\nOn touch enabled devices, metaKeySelection is turned off automatically."
       },
       "filter": {
         "type": {
@@ -2149,6 +2149,523 @@
         "description": "Template funtion to use",
         "defaultValue": {
           "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/MenuBar/MenuBar.js": {
+    "description": "MenuBar",
+    "displayName": "Menubar",
+    "methods": [
+      {
+        "name": "renderCustomContent",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "model": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of menuitems.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback function",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/MenuBar/MenuBarComponent.js": {
+    "description": "MenuBarComponent",
+    "displayName": "MenubarComponent",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "model": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of menuitems.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "inputPlaceholder": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Input placeholder",
+        "defaultValue": {
+          "value": "'Search'",
+          "computed": false
+        }
+      },
+      "btnicon": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Button Icon",
+        "defaultValue": {
+          "value": "'pi pi-power-off'",
+          "computed": false
+        }
+      },
+      "btnlabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Button label",
+        "defaultValue": {
+          "value": "'Logout'",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "menubarItem": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Current Menu object",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "submenubarItem": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Currently selected item",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback function",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/MenuBar/MenubarSub.js": {
+    "description": "",
+    "displayName": "MenubarSub",
+    "methods": [
+      {
+        "name": "onItemMouseEnter",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onItemClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onItemKeyDown",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onChildItemKeyDown",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "childListItem",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "expandSubmenu",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "listItem",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "collapseMenu",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "listItem",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "navigateToNextItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "listItem",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "navigateToPrevItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "listItem",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "findNextItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "findPrevItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onLeafClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderSeparator",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderIcon",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderSubmenuIcon",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderSubmenu",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderMenuitem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderMenu",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "model": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "root": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "popup": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "onLeafClick": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onKeyDown": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "parentActive": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "false",
           "computed": false
         }
       }
@@ -2469,7 +2986,7 @@
     }
   },
   "src/lib/components/OrganizationChart/OrganizationChartComponent.react.js": {
-    "description": "OrganizationChartComponent is a component to nicely display a data tree.\r\nIt takes a property, `value`, which is the actual data object\r\ncreates a hierachy tree which is then rendered.\r\nOther inputs are `selectionMode`, `selection`, `className` and `style`\r\nwhich are optional. Defaults will be applied unless provided by the user.",
+    "description": "OrganizationChartComponent is a component to nicely display a data tree.\nIt takes a property, `value`, which is the actual data object\ncreates a hierachy tree which is then rendered.\nOther inputs are `selectionMode`, `selection`, `className` and `style`\nwhich are optional. Defaults will be applied unless provided by the user.",
     "displayName": "OrganizationChartComponent",
     "methods": [
       {
@@ -2505,7 +3022,7 @@
           }
         },
         "required": false,
-        "description": "An array of nested TreeNodes. A valid treenode should contain at least a `label` property.\r\nPlease check on sample data at /sample_data/org_data"
+        "description": "An array of nested TreeNodes. A valid treenode should contain at least a `label` property.\nPlease check on sample data at /sample_data/org_data"
       },
       "selectionMode": {
         "type": {
@@ -2577,7 +3094,7 @@
           "name": "func"
         },
         "required": false,
-        "description": "Dash-assigned callback that should be called to report property changes\r\nto Dash, to make them available for callbacks.",
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks.",
         "defaultValue": {
           "value": "() => {}",
           "computed": false
@@ -3156,8 +3673,222 @@
       }
     }
   },
+  "src/lib/components/PanelMenu/PanelMenu.js": {
+    "description": "PanelMenu",
+    "displayName": "PanelMenu",
+    "methods": [
+      {
+        "name": "onItemClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderPanelIcon",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderPanelToggleIcon",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "active",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderPanel",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderPanels",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "model": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of menuitems.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "callback",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/PanelMenu/PanelMenuComponent.js": {
+    "description": "PanelMenuComponent",
+    "displayName": "PanelMenuComponent",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "model": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of menuitems.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "{width: '300px'}",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "callback",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "panelmenuItem": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Current menuitem",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "panelsubmenu": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Selected submenu item",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/Rating/Rating.js": {
-    "description": "Rating component\r\nDisplays rating",
+    "description": "Rating component\nDisplays rating",
     "displayName": "Rating",
     "methods": [
       {
@@ -3482,11 +4213,1027 @@
           "name": "func"
         },
         "required": false,
-        "description": "Dash-assigned callback that should be called to report property changes\r\nto Dash, to make them available for callbacks.",
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks.",
         "defaultValue": {
           "value": "() => {}",
           "computed": false
         }
+      }
+    }
+  },
+  "src/lib/components/Steps/Steps.js": {
+    "description": "Steps",
+    "displayName": "Steps",
+    "methods": [
+      {
+        "name": "itemClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          },
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderItems",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "model": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of menuitems.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "activeIndex": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Index of the active item.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "readOnly": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether the items are clickable or not.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onSelect": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback to invoke when the new step is selected.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/Steps/StepsComponent.js": {
+    "description": "WrapperComponent on the Steps component\nAdds callback",
+    "displayName": "StepsComponent",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique identifier of the element.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "model": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "An array of menuitems.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "activeIndex": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Index of the active item.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "readOnly": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether the items are clickable or not.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onSelect": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback when item is selected",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/TreeDashUiComponents.react.js": {
+    "description": "",
+    "displayName": "TreeDashUiComponents",
+    "methods": [
+      {
+        "name": "init",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "getExpandedKeys",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "getRootNode",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onToggle",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onSelectionChange",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "selectValue",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onDragStart",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onDragEnd",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onDrop",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onDropPoint",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "validateDrop",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "dragPath",
+            "type": null
+          },
+          {
+            "name": "dropPath",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "validateDropNode",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "dragPath",
+            "type": null
+          },
+          {
+            "name": "dropPath",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "validateDropPoint",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "areSiblings",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "path1",
+            "type": null
+          },
+          {
+            "name": "path2",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "findNode",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "value",
+            "type": null
+          },
+          {
+            "name": "path",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "isNodeLeaf",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "node",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onFilterInputKeyDown",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onFilterInputChange",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "filter",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "findFilteredNodes",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "node",
+            "type": null
+          },
+          {
+            "name": "paramsWithoutNode",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "isFunction",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "obj",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "resolveFieldData",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "data",
+            "type": null
+          },
+          {
+            "name": "field",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "isFilterMatched",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "node",
+            "type": null
+          },
+          {
+            "name": "{searchFields, filterText, isStrictMode}",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderRootChild",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "node",
+            "type": null
+          },
+          {
+            "name": "index",
+            "type": null
+          },
+          {
+            "name": "last",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderRootChildren",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderModel",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderLoader",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "renderFilter",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "selectionMode": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "selectionKeys": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onSelectionChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "contextMenuSelectionKey": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onContextMenuSelectionChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "expandedKeys": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "contentStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "contentClassName": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "metaKeySelection": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "propagateSelectionUp": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "propagateSelectionDown": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "loading": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "loadingIcon": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'pi pi-spinner'",
+          "computed": false
+        }
+      },
+      "dragdropScope": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "filter": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "filterBy": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'label'",
+          "computed": false
+        }
+      },
+      "filterMode": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'lenient'",
+          "computed": false
+        }
+      },
+      "filterPlaceholder": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "nodeTemplate": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onSelect": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onUnselect": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onExpand": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onCollapse": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onToggle": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onDragDrop": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "onContextMenu": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/Webcam/WebcamDashUiComponents.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "WebcamDashUiComponents",
+    "methods": [
+      {
+        "name": "getScreenshot",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "updateIntervals",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "prevProps",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS class of video element",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "audio": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "enable/disable audio",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "height": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "height of video element",
+        "defaultValue": {
+          "value": "480",
+          "computed": false
+        }
+      },
+      "width": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "width of video element",
+        "defaultValue": {
+          "value": "640",
+          "computed": false
+        }
+      },
+      "screenshotWidth": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "width of screenshot",
+        "defaultValue": {
+          "value": "640",
+          "computed": false
+        }
+      },
+      "screenshotHeight": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "width of screenshot",
+        "defaultValue": {
+          "value": "480",
+          "computed": false
+        }
+      },
+      "screenshotFormat": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "format of screenshot",
+        "defaultValue": {
+          "value": "\"image/webp\"",
+          "computed": false
+        }
+      },
+      "screenshotQuality": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "quality of screenshot(0 to 1)",
+        "defaultValue": {
+          "value": "0.92",
+          "computed": false
+        }
+      },
+      "screenshotInterval": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "update interval of screenshot in milliseconds"
+      },
+      "screenshot": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "getScreenshot() returns a base64 encoded string of the current webcam\nimage. screenshot is the prop updated at fixed interval from calling\ngetScreenshot(). It is currently capped at 25 fps."
       }
     }
   },
@@ -4262,810 +6009,6 @@
           "value": "null",
           "computed": false
         }
-      }
-    }
-  },
-  "src/lib/components/TreeDashUiComponents.react.js": {
-    "description": "",
-    "displayName": "TreeDashUiComponents",
-    "methods": [
-      {
-        "name": "init",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      },
-      {
-        "name": "getExpandedKeys",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      },
-      {
-        "name": "getRootNode",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      },
-      {
-        "name": "onToggle",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "event",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "onSelectionChange",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "selectValue",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "onDragStart",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "event",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "onDragEnd",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      },
-      {
-        "name": "onDrop",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "event",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "onDropPoint",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "event",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "validateDrop",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "dragPath",
-            "type": null
-          },
-          {
-            "name": "dropPath",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "validateDropNode",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "dragPath",
-            "type": null
-          },
-          {
-            "name": "dropPath",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "validateDropPoint",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "event",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "areSiblings",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "path1",
-            "type": null
-          },
-          {
-            "name": "path2",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "findNode",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "value",
-            "type": null
-          },
-          {
-            "name": "path",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "isNodeLeaf",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "node",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "onFilterInputKeyDown",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "event",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "onFilterInputChange",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "event",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "filter",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      },
-      {
-        "name": "findFilteredNodes",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "node",
-            "type": null
-          },
-          {
-            "name": "paramsWithoutNode",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "isFunction",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "obj",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "resolveFieldData",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "data",
-            "type": null
-          },
-          {
-            "name": "field",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "isFilterMatched",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "node",
-            "type": null
-          },
-          {
-            "name": "{searchFields, filterText, isStrictMode}",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "renderRootChild",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "node",
-            "type": null
-          },
-          {
-            "name": "index",
-            "type": null
-          },
-          {
-            "name": "last",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "renderRootChildren",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      },
-      {
-        "name": "renderModel",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      },
-      {
-        "name": "renderLoader",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      },
-      {
-        "name": "renderFilter",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      }
-    ],
-    "props": {
-      "id": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "value": {
-        "type": {
-          "name": "any"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "disabled": {
-        "type": {
-          "name": "bool"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "false",
-          "computed": false
-        }
-      },
-      "selectionMode": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "selectionKeys": {
-        "type": {
-          "name": "any"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "onSelectionChange": {
-        "type": {
-          "name": "func"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "contextMenuSelectionKey": {
-        "type": {
-          "name": "any"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "onContextMenuSelectionChange": {
-        "type": {
-          "name": "func"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "expandedKeys": {
-        "type": {
-          "name": "object"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "style": {
-        "type": {
-          "name": "object"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "className": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "contentStyle": {
-        "type": {
-          "name": "object"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "contentClassName": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "metaKeySelection": {
-        "type": {
-          "name": "bool"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "true",
-          "computed": false
-        }
-      },
-      "propagateSelectionUp": {
-        "type": {
-          "name": "bool"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "true",
-          "computed": false
-        }
-      },
-      "propagateSelectionDown": {
-        "type": {
-          "name": "bool"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "true",
-          "computed": false
-        }
-      },
-      "loading": {
-        "type": {
-          "name": "bool"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "false",
-          "computed": false
-        }
-      },
-      "loadingIcon": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "'pi pi-spinner'",
-          "computed": false
-        }
-      },
-      "dragdropScope": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "filter": {
-        "type": {
-          "name": "bool"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "false",
-          "computed": false
-        }
-      },
-      "filterBy": {
-        "type": {
-          "name": "any"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "'label'",
-          "computed": false
-        }
-      },
-      "filterMode": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "'lenient'",
-          "computed": false
-        }
-      },
-      "filterPlaceholder": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "nodeTemplate": {
-        "type": {
-          "name": "func"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "onSelect": {
-        "type": {
-          "name": "func"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "onUnselect": {
-        "type": {
-          "name": "func"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "onExpand": {
-        "type": {
-          "name": "func"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "onCollapse": {
-        "type": {
-          "name": "func"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "onToggle": {
-        "type": {
-          "name": "func"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "onDragDrop": {
-        "type": {
-          "name": "func"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "onContextMenu": {
-        "type": {
-          "name": "func"
-        },
-        "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      }
-    }
-  },
-  "src/lib/components/Webcam/WebcamDashUiComponents.react.js": {
-    "description": "ExampleComponent is an example component.\r\nIt takes a property, `label`, and\r\ndisplays it.\r\nIt renders an input with the property `value`\r\nwhich is editable by the user.",
-    "displayName": "WebcamDashUiComponents",
-    "methods": [
-      {
-        "name": "getScreenshot",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      },
-      {
-        "name": "updateIntervals",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "prevProps",
-            "type": null
-          }
-        ],
-        "returns": null
-      }
-    ],
-    "props": {
-      "id": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "The ID used to identify this component in Dash callbacks",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "className": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "CSS class of video element",
-        "defaultValue": {
-          "value": "''",
-          "computed": false
-        }
-      },
-      "audio": {
-        "type": {
-          "name": "bool"
-        },
-        "required": false,
-        "description": "enable/disable audio",
-        "defaultValue": {
-          "value": "true",
-          "computed": false
-        }
-      },
-      "height": {
-        "type": {
-          "name": "number"
-        },
-        "required": false,
-        "description": "height of video element",
-        "defaultValue": {
-          "value": "480",
-          "computed": false
-        }
-      },
-      "width": {
-        "type": {
-          "name": "number"
-        },
-        "required": false,
-        "description": "width of video element",
-        "defaultValue": {
-          "value": "640",
-          "computed": false
-        }
-      },
-      "screenshotWidth": {
-        "type": {
-          "name": "number"
-        },
-        "required": false,
-        "description": "width of screenshot",
-        "defaultValue": {
-          "value": "640",
-          "computed": false
-        }
-      },
-      "screenshotHeight": {
-        "type": {
-          "name": "number"
-        },
-        "required": false,
-        "description": "width of screenshot",
-        "defaultValue": {
-          "value": "480",
-          "computed": false
-        }
-      },
-      "screenshotFormat": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "format of screenshot",
-        "defaultValue": {
-          "value": "\"image/webp\"",
-          "computed": false
-        }
-      },
-      "screenshotQuality": {
-        "type": {
-          "name": "number"
-        },
-        "required": false,
-        "description": "quality of screenshot(0 to 1)",
-        "defaultValue": {
-          "value": "0.92",
-          "computed": false
-        }
-      },
-      "screenshotInterval": {
-        "type": {
-          "name": "number"
-        },
-        "required": false,
-        "description": "update interval of screenshot in milliseconds"
-      },
-      "screenshot": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "getScreenshot() returns a base64 encoded string of the current webcam\r\nimage. screenshot is the prop updated at fixed interval from calling\r\ngetScreenshot(). It is currently capped at 25 fps."
       }
     }
   }
