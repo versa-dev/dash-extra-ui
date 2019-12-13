@@ -9,32 +9,36 @@ import './MenuBarComponent.css';
  * MenuBarComponent
  */
 export default class MenubarComponent extends Component {
-    constructor() {
-        super();
-    }
-
     onValueChange = e => {
-        console.log(e.target.value);
+        this.props.setProps({menubarInput: e.target.value});
+    };
+
+    onSearch = input => {
+        this.props.setProps({searchQuery: input});
     };
 
     render() {
-        const inputText = this.props.inputText && (
-            <div className="">
+        const {menubarInput, btnlabel, btnicon, inputPlaceholder} = this.props;
+        const showInputText = this.props.inputTextBox && (
+            <span>
                 <InputText
-                    placeholder={this.props.inputPlaceholder}
+                    placeholder={inputPlaceholder}
                     type="text"
-                    role="textbox"
-                    // value={this.props.menubarInput}
-                    onChange={this.onValueChange}
+                    value={menubarInput || ''}
+                    onChange={e => this.onValueChange(e)}
                 />
-                <span className="p-listbox-filter-icon pi pi-search"></span>
-            </div>
+                <span
+                    className="p-listbox-filter-icon pi pi-search"
+                    onClick={() => this.onSearch(menubarInput)}
+                ></span>
+            </span>
         );
-        const button = this.props.button && (
+        const showButton = this.props.button && (
             <Button
-                label={this.props.btnlabel}
-                icon={this.props.btnicon}
+                label={btnlabel}
+                icon={btnicon}
                 style={{marginLeft: 4}}
+                onClick={() => this.props.setProps({btnClick: 'logout'})}
             />
         );
         return (
@@ -44,8 +48,8 @@ export default class MenubarComponent extends Component {
                     setProps={props => this.props.setProps(props)}
                     // activeItem={this.props.activeItem}
                 >
-                    {inputText}
-                    {button}
+                    {showInputText}
+                    {showButton}
                 </Menubar>
             </div>
         );
@@ -63,8 +67,11 @@ MenubarComponent.defaultProps = {
     btnlabel: 'Logout',
     btnicon: 'pi pi-power-off',
     inputPlaceholder: 'Search',
-    inputText: true,
+    inputTextBox: true,
     button: true,
+    searchQuery: null,
+    menubarInput: null,
+    btnClick: null,
 };
 
 MenubarComponent.propTypes = {
@@ -105,8 +112,17 @@ MenubarComponent.propTypes = {
      * Currently selected item
      */
     submenubarItem: PropTypes.object,
-    inputText: PropTypes.bool,
+    /**
+     * Show or hide input text box
+     */
+    inputTextBox: PropTypes.bool,
+    /**
+     * Show or hide button
+     */
     button: PropTypes.bool,
+    searchQuery: PropTypes.string,
+    menubarInput: PropTypes.string,
+    btnClick: PropTypes.string,
     /**
      * Callback function
      */

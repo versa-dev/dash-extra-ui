@@ -291,6 +291,8 @@ app.layout = html.Div(children=[
     ex.MenuBarComponent(
         id='menubar',
         model=menu_items,
+        # inputTextBox=False,
+        # button=False,
         # btnlabel="Logout",
         # btnicon="pi pi-power-off",
         # inputPlaceholder="Search",
@@ -299,6 +301,9 @@ app.layout = html.Div(children=[
     ),
     html.Div(id='menubar-output'),
     html.Div(id='menubar-output1'),
+    html.Div(id='menubar-output2'),
+    html.Div(id='menubar-output3'),
+    html.Div(id='menubar-output4'),
 
 ]
 )
@@ -327,6 +332,20 @@ def menubar_out(current_menu):
 @app.callback(Output('menubar-output1', 'children'), [Input('menubar', 'submenubarItem')])
 def menubar_out1(current_submenu):
     return f"Current SubMenuBar Item: {current_submenu}"
+
+@app.callback(Output('menubar-output2', 'children'), [Input('menubar', 'menubarInput')])
+def menubar_out2(menubar_input):
+    return f"Inputted Text: {menubar_input}"
+
+
+@app.callback(Output('menubar-output3', 'children'), [Input('menubar', 'searchQuery')])
+def menubar_out3(search_query):
+    return f"Current Query: {search_query}"
+
+
+@app.callback(Output('menubar-output4', 'children'), [Input('menubar', 'btnClick')])
+def menubar_out4(btn_click):
+    return f"Clicked button: {btn_click}"
 
 
 if __name__ == '__main__':

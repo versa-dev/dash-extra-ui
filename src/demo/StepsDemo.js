@@ -277,6 +277,7 @@ class StepsDemo extends Component {
                 />
                 <MenuBarComponent
                     activeItem={this.state.activeItem}
+                    menubarInput={this.state.menubarInput}
                     inputText={true}
                     button={true}
                     // btnlabel="Logout"

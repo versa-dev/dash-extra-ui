@@ -45,3 +45,12 @@ body .p-button.p-button-text-icon-left .p-button-text {
 .p-menubar .p-menuitem-text {
     vertical-align: middle;
 }
+
+.p-listbox-filter-icon {
+    top: 50%;
+    left: auto;
+    right: 0.533em;
+    margin-left: -25px;
+    margin-right: 5px;
+    cursor: pointer;
+}

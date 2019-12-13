@@ -2227,7 +2227,32 @@
   "src/lib/components/MenuBar/MenuBarComponent.js": {
     "description": "MenuBarComponent",
     "displayName": "MenubarComponent",
-    "methods": [],
+    "methods": [
+      {
+        "name": "onValueChange",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onSearch",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "input",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
     "props": {
       "id": {
         "type": {
@@ -2323,6 +2348,61 @@
         },
         "required": false,
         "description": "Currently selected item",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "inputTextBox": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Show or hide input text box",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "button": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Show or hide button",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "searchQuery": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "menubarInput": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "btnClick": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
         "defaultValue": {
           "value": "null",
           "computed": false
