@@ -13,7 +13,30 @@ export default class MenubarComponent extends Component {
         super();
     }
 
+    onValueChange = e => {
+        console.log(e.target.value);
+    };
+
     render() {
+        const inputText = this.props.inputText && (
+            <div className="">
+                <InputText
+                    placeholder={this.props.inputPlaceholder}
+                    type="text"
+                    role="textbox"
+                    // value={this.props.menubarInput}
+                    onChange={this.onValueChange}
+                />
+                <span className="p-listbox-filter-icon pi pi-search"></span>
+            </div>
+        );
+        const button = this.props.button && (
+            <Button
+                label={this.props.btnlabel}
+                icon={this.props.btnicon}
+                style={{marginLeft: 4}}
+            />
+        );
         return (
             <div className="content-section implementation">
                 <Menubar
@@ -21,15 +44,8 @@ export default class MenubarComponent extends Component {
                     setProps={props => this.props.setProps(props)}
                     // activeItem={this.props.activeItem}
                 >
-                    <InputText
-                        placeholder={this.props.inputPlaceholder}
-                        type="text"
-                    />
-                    <Button
-                        label={this.props.btnlabel}
-                        icon={this.props.btnicon}
-                        style={{marginLeft: 4}}
-                    />
+                    {inputText}
+                    {button}
                 </Menubar>
             </div>
         );
@@ -47,6 +63,8 @@ MenubarComponent.defaultProps = {
     btnlabel: 'Logout',
     btnicon: 'pi pi-power-off',
     inputPlaceholder: 'Search',
+    inputText: true,
+    button: true,
 };
 
 MenubarComponent.propTypes = {
@@ -87,6 +105,8 @@ MenubarComponent.propTypes = {
      * Currently selected item
      */
     submenubarItem: PropTypes.object,
+    inputText: PropTypes.bool,
+    button: PropTypes.bool,
     /**
      * Callback function
      */

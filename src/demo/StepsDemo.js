@@ -277,6 +277,8 @@ class StepsDemo extends Component {
                 />
                 <MenuBarComponent
                     activeItem={this.state.activeItem}
+                    inputText={true}
+                    button={true}
                     // btnlabel="Logout"
                     // btnicon="pi pi-power-off"
                     // inputPlaceholder="Search"
