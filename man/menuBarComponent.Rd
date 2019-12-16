@@ -11,7 +11,9 @@ MenuBarComponent
 
 \usage{
 menuBarComponent(id=NULL, model=NULL, style=NULL, inputPlaceholder=NULL, btnicon=NULL,
-btnlabel=NULL, className=NULL, menubarItem=NULL, submenubarItem=NULL)
+btnlabel=NULL, className=NULL, menubarItem=NULL, submenubarItem=NULL,
+inputTextBox=NULL, button=NULL, searchQuery=NULL, menubarInput=NULL,
+btnClick=NULL)
 }
 
 \arguments{
@@ -32,4 +34,14 @@ btnlabel=NULL, className=NULL, menubarItem=NULL, submenubarItem=NULL)
 \item{menubarItem}{Named list. Current Menu object}
 
 \item{submenubarItem}{Named list. Currently selected item}
+
+\item{inputTextBox}{Logical. Show or hide input text box}
+
+\item{button}{Logical. Show or hide button}
+
+\item{searchQuery}{Character. }
+
+\item{menubarInput}{Character. }
+
+\item{btnClick}{Character. }
 }
