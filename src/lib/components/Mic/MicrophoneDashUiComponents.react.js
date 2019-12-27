@@ -21,10 +21,17 @@ export default class MicrophoneDashUiComponents extends React.Component {
 
     onStop(recordedBlob) {
         console.log('recordedBlob is: ', recordedBlob);
-        this.props.setProps({
-            realData: "Please check audio",
-            recordedBlob
-        })
+	
+	let read = new FileReader();
+	read.readAsDataURL(recordedBlob.blob);
+	read.onloadend = () => {
+	    this.props.setProps({
+	      realData: read.result,
+	      recordedBlob
+	    })
+
+	}
+	
     }
 
     shouldComponentUpdate(nextProps)
