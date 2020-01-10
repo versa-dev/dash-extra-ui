@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@cleandersonlobo/react-mic": "^1.1.1",
     "classnames": "^2.2.6",
     "file-loader": "^4.2.0",
     "primeicons": "^2.0.0",

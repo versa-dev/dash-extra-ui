@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {ReactMic} from 'react-mic';
+import {ReactMic} from '@cleandersonlobo/react-mic';
 
 import "./Microphone.css";
 
