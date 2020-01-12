@@ -1,6 +1,6 @@
 {
   "name": "extra_dash_ui_components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A collection of useful UI components for building interactive Dash applications.",
   "main": "build/index.js",
   "scripts": {
@@ -17,6 +17,8 @@
   "license": "MIT",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/polyfill": "^7.8.0",
+    "@babel/runtime": "^7.8.0",
     "@cleandersonlobo/react-mic": "^1.1.1",
     "classnames": "^2.2.6",
     "file-loader": "^4.2.0",
@@ -31,6 +33,7 @@
   "devDependencies": {
     "@babel/core": "^7.5.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.5.4",
+    "@babel/plugin-transform-runtime": "^7.8.0",
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.2",

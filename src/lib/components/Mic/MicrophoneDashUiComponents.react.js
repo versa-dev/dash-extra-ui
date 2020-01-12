@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {ReactMic} from '@cleandersonlobo/react-mic';
+//import {ReactMic} from '@cleandersonlobo/react-mic';
+import {ReactMic} from 'react-mic';
 
 import "./Microphone.css";
 
@@ -84,7 +85,7 @@ MicrophoneDashUiComponents.defaultProps = {
     strokeColor       : '#000000',
     className         : 'sound-wave',
     audioBitsPerSecond: 128000,
-    mimeType          : "audio/webm;codecs=opus",
+    mimeType          : "audio/wav",
     record            : false,
     width             : 640,
     height            : 100,
