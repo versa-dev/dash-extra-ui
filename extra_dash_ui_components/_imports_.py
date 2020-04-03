@@ -25,7 +25,6 @@ from .PaginatorDashUiComponents import PaginatorDashUiComponents
 from .PanelMenu import PanelMenu
 from .PanelMenuComponent import PanelMenuComponent
 from .PDFViewerComponent import PDFViewerComponent
-from .PDFViewerComponent import PDFViewerComponent
 from .Rating import Rating
 from .RatingComponent import RatingComponent
 from .Steps import Steps
@@ -61,7 +60,6 @@ __all__ = [
     "PaginatorDashUiComponents",
     "PanelMenu",
     "PanelMenuComponent",
-    "PDFViewerComponent",
     "PDFViewerComponent",
     "Rating",
     "RatingComponent",

@@ -3967,90 +3967,6 @@
       }
     }
   },
-  "src/lib/components/PDFViewer/PDFViewerComponent.js": {
-    "description": "Component to render a PDFViewer element",
-    "displayName": "PDFViewerComponent",
-    "methods": [
-      {
-        "name": "renderTooltip",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      },
-      {
-        "name": "renderIcon",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      },
-      {
-        "name": "renderLabel",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      }
-    ],
-    "props": {
-      "label": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "Text of the button.",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "icon": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "Name of the icon.",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "iconPos": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "Position of the icon, valid values are \"left\" and \"right\".",
-        "defaultValue": {
-          "value": "'left'",
-          "computed": false
-        }
-      },
-      "tooltip": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "Content of the tooltip.",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
-      "tooltipOptions": {
-        "type": {
-          "name": "object"
-        },
-        "required": false,
-        "description": "Configuration of the tooltip, refer to the tooltip documentation for more information.",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      }
-    }
-  },
   "src/lib/components/PDFViewer/PDFViewerComponent.react.js": {
     "description": "PDF Viewer component with controls\r\nPage navigation\r\nZoom\r\nRotation",
     "displayName": "PDFViewerComponent",
@@ -4063,8 +3979,8 @@
         "required": false,
         "description": "The url of the PDF document",
         "defaultValue": {
-          "value": "undefined",
-          "computed": true
+          "value": "''",
+          "computed": false
         }
       },
       "date64": {
@@ -4074,8 +3990,118 @@
         "required": false,
         "description": "PDF file encoded in base64",
         "defaultValue": {
-          "value": "undefined",
-          "computed": true
+          "value": "''",
+          "computed": false
+        }
+      },
+      "page": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The page that will be shown first on document load",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "scale": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Scale factor relative to the component parent element",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "scaleStep": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Scale factor to be increased or decreased on Zoom-in or zoom-out",
+        "defaultValue": {
+          "value": ".5",
+          "computed": false
+        }
+      },
+      "maxScale": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Maximun scale factor for zoom-in",
+        "defaultValue": {
+          "value": "3",
+          "computed": false
+        }
+      },
+      "minScale": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Minimum scale factor for zoom-in",
+        "defaultValue": {
+          "value": ".5",
+          "computed": false
+        }
+      },
+      "css": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes that will be setted for the component wrapper",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "navbarOnTop": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "By default navbar is displayed on bottom, but can be placed on top by passing this prop",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "hideZoom": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "By default zoom buttons are displayed, but can be hidden by passing this prop",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "hideRotation": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "By default rotation buttons are displayed, but can be hidden by passing this prop",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "protectContent": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "By default Right Click and Context Menu are enabled, but can be disabled by passing this prop",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
         }
       }
     }
