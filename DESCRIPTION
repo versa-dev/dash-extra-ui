@@ -1,7 +1,6 @@
 Package: extraDashUiComponents
 Title: A collection of useful UI components for building interactive Dash applications.
-Version: 0.0.1
-Authors @R: as.person(c(NF <nvfrik@ncsu.edu>))
+Version: 0.0.2
 Description: A collection of useful UI components for building interactive Dash applications.
 Depends: R (>= 3.0.2)
 Imports: 
@@ -11,5 +10,6 @@ URL:
 BugReports: 
 Encoding: UTF-8
 LazyData: true
+KeepSource: true
 Author: NF [aut]
 Maintainer: NF <nvfrik@ncsu.edu>

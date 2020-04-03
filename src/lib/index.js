@@ -14,6 +14,7 @@ import MicrophoneDashUiComponents from './components/Mic/MicrophoneDashUiCompone
 import StepsComponent from './components/Steps/StepsComponent'; 
 import MenuBarComponent from './components/MenuBar/MenuBarComponent'; 
 import PanelMenuComponent from './components/PanelMenu/PanelMenuComponent'; 
+import PDFViewerComponent from './components/PDFViewer/PDFViewerComponent.react';
 
 export {
     // ExtraDashUiComponents,
@@ -30,5 +31,6 @@ export {
     MicrophoneDashUiComponents,
     StepsComponent,
     MenuBarComponent,
-    PanelMenuComponent
+    PanelMenuComponent,
+    PDFViewerComponent
 };

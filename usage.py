@@ -313,7 +313,10 @@ app.layout = html.Div(children=[
             header="Scroll Down to Load More"
         )
     ], className='content-section implementation'),
-    html.H4('Datascroller inline Preview'),
+    html.H4('PDF Viewer Preview'),
+    ex.PDFViewerComponent(
+            url='https://arxiv.org/pdf/quant-ph/0410100.pdf',
+        )
 ])
 
 # @app.callback(Output('output', 'children'), [Input('paginator-default', 'first'),
