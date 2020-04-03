@@ -316,6 +316,7 @@ app.layout = html.Div(children=[
     html.H4('PDF Viewer Preview'),
     ex.PDFViewerComponent(
             url='https://arxiv.org/pdf/quant-ph/0410100.pdf',
+            navbarOnTop=True
         )
 ])
 
