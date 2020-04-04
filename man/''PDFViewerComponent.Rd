@@ -10,7 +10,7 @@ PDF Viewer component with controls Page navigation Zoom Rotation
 }
 
 \usage{
-''PDFViewerComponent(url=NULL, date64=NULL, page=NULL, scale=NULL, scaleStep=NULL, maxScale=NULL,
+''PDFViewerComponent(url=NULL, base64=NULL, page=NULL, scale=NULL, scaleStep=NULL, maxScale=NULL,
 minScale=NULL, css=NULL, navbarOnTop=NULL, hideZoom=NULL, hideRotation=NULL,
 protectContent=NULL)
 }
@@ -18,7 +18,7 @@ protectContent=NULL)
 \arguments{
 \item{url}{Character. The url of the PDF document}
 
-\item{date64}{Character. PDF file encoded in base64}
+\item{base64}{Character. PDF file encoded in base64}
 
 \item{page}{Numeric. The page that will be shown first on document load}
 

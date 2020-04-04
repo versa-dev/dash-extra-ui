@@ -3983,7 +3983,7 @@
           "computed": false
         }
       },
-      "date64": {
+      "base64": {
         "type": {
           "name": "string"
         },
