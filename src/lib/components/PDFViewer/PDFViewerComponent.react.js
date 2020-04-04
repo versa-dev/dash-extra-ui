@@ -17,13 +17,13 @@ export default class PDFViewerComponent extends Component {
     render() {
         const {
             url,
-            data64,
+            base64,
             ...rest
         } = this.props;
-    
+
         return (
             <PDFViewer
-                document={url ? { url } : (data64 ? { data64 } : {})}
+                document={url ? { url } : (base64 ? { base64 } : {})}
                 {...rest}
             />
         );
@@ -39,7 +39,7 @@ PDFViewerComponent.propTypes = {
     /**
      *  PDF file encoded in base64
      */
-    date64: PropTypes.string,
+    base64: PropTypes.string,
 
     /**
      * The page that will be shown first on document load
@@ -94,7 +94,7 @@ PDFViewerComponent.propTypes = {
 
 PDFViewerComponent.defaultProps = {
     url: '',
-    date64: '',
+    base64: '',
     page: 1,
     scale: 1,
     scaleStep: .5,
