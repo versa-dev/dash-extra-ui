@@ -13,7 +13,7 @@ Keyword arguments:
 - strokeColor (string; default '#000000')
 - className (string; default 'sound-wave')
 - audioBitsPerSecond (number; default 128000)
-- mimeType (string; default "audio/webm;codecs=opus")
+- mimeType (string; default "audio/wav")
 - height (number; default 100)
 - record (boolean; default False)
 - realData (string; optional)

@@ -22,6 +22,7 @@
     "@cleandersonlobo/react-mic": "^1.1.1",
     "classnames": "^2.2.6",
     "file-loader": "^4.2.0",
+    "pdf-viewer-reactjs": "^2.0.5",
     "primeicons": "^2.0.0",
     "primereact": "^3.3.2",
     "ramda": "^0.26.1",
