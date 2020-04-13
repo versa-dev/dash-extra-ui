@@ -15,6 +15,7 @@ import StepsComponent from './components/Steps/StepsComponent';
 import MenuBarComponent from './components/MenuBar/MenuBarComponent'; 
 import PanelMenuComponent from './components/PanelMenu/PanelMenuComponent'; 
 import PDFViewerComponent from './components/PDFViewer/PDFViewerComponent.react';
+import GeolocatorComponent from './components/Geolocator/GeolocatorComponent.react';
 
 export {
     // ExtraDashUiComponents,
@@ -32,5 +33,6 @@ export {
     StepsComponent,
     MenuBarComponent,
     PanelMenuComponent,
-    PDFViewerComponent
+    PDFViewerComponent,
+    GeolocatorComponent
 };
