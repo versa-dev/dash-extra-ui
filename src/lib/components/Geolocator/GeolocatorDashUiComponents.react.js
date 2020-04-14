@@ -1,8 +1,8 @@
-import React, {Component} from "react";
-import { geolocated, geoPropTypes } from "react-geolocated";
+import React, {Component} from 'react';
+import { geolocated } from "react-geolocated";
 import PropTypes from 'prop-types';
 
-class GeolocatorComponent extends Component {
+class GeolocatorDashUiComponents extends Component {
 
     constructor(props) {
         super(props);
@@ -51,16 +51,12 @@ class GeolocatorComponent extends Component {
     }
 }
 
-// // Using Object.assign
-// GeolocatorComponent.propTypes = Object.assign({}, GeolocatorComponent.propTypes, geoPropTypes);
+GeolocatorDashUiComponents.defaultProps={
+    id: null
+};
 
-// GeolocatorComponent.defaultProps={
-//
-// }
+GeolocatorDashUiComponents.propTypes = {
+    id: PropTypes.string
+};
 
-export default geolocated({
-    positionOptions: {
-        enableHighAccuracy: false,
-    },
-    userDecisionTimeout: 5000,
-})(GeolocatorComponent);
+export default geolocated()(GeolocatorDashUiComponents);

@@ -207,6 +207,10 @@ app.layout = html.Div(children=[
         id='tree',
         value=data
     ),
+    html.H4('geolocator Preview'),
+    ex.GeolocatorDashUiComponents(
+        id='geolocator'
+    ),
 
     html.H4('breadcrumbs Preview'),
     ex.BreadcrumbsDashUiComponents(
