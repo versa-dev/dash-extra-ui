@@ -208,7 +208,7 @@ app.layout = html.Div(children=[
         value=data
     ),
     html.H4('geolocator Preview'),
-    ex.GeolocatorDashUiComponents(
+    ex.GeolocatorComponent(
         id='geolocator'
     ),
 
@@ -372,4 +372,4 @@ def tree_output1(selectionKeys):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(host="0.0.0.0", port=int("8080"),debug=True)
