@@ -268,6 +268,13 @@ app.layout = html.Div(children=[
     # ),
     ex.TrelloComponent(
         draggable=True,
+        laneDraggable=True,
+        cardDraggable=True,
+        collapsibleLanes=True,
+        editable=True,
+        canAddLanes=True,
+        hideCardDeleteIcon=True,
+        editLaneTitle=True   
     ),
     ex.CarouselComponent(
         id='input5',

@@ -74,9 +74,9 @@ export default class TrelloComponent extends Component {
             <div>
                 <h1>this is trello</h1>
                 <Board data = { data }   draggable = { this.props.draggable } 
-                // laneDraggable = { this.props.laneDraggable } cardDraggable = { this.props.cardDraggable } 
-                // collapsibleLanes = { this.props.collapsibleLanes } editable = { this.props.editable } canAddLanes = { this.props.canAddLanes } 
-                // hideCardDeleteIcon = { this.props.hideCardDeleteIcon } editLaneTitle = { this.props.editLaneTitle } 
+                laneDraggable = { this.props.laneDraggable } cardDraggable = { this.props.cardDraggable } 
+                collapsibleLanes = { this.props.collapsibleLanes } editable = { this.props.editable } canAddLanes = { this.props.canAddLanes } 
+                hideCardDeleteIcon = { this.props.hideCardDeleteIcon } editLaneTitle = { this.props.editLaneTitle } 
                 // handleDragStart handleDragEnd handleLaneDragStart handleLaneDragEnd onDataChange onCardClick onCardAdd onBeforeCardDelete onCardDelete onCardMoveAcrossLanes
                 // onLaneAdd onLaneDelete onLaneUpdate onLaneClick onLaneScroll
                 />
