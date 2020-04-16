@@ -8,7 +8,8 @@ import {
     PaginatorDashUiComponents,
     TreeDashUiComponents,
     WebcamDashUiComponents,
-    MicrophoneDashUiComponents
+    MicrophoneDashUiComponents,
+    TrelloComponent
 } from '../lib';
 import {carsCarousel} from './sampleData/carouselData';
 import orgSample from './sampleData/orgChartData';
@@ -295,7 +296,7 @@ class App extends Component {
 
         return (
             <div>
-                <CarouselComponent
+                {/* <CarouselComponent
                     value={carsCarousel}
                     numVisible={4}
                     numScroll={1}
@@ -306,7 +307,7 @@ class App extends Component {
                     // setProps={this.setProps}
                     circular={true}
                     autoplayInterval={2000}
-                />
+                /> */}
                 {/* <RatingComponent
                     value={this.state.value}
                     setProps={this.setProps}
@@ -336,8 +337,8 @@ class App extends Component {
                     setProps={this.setProps}
                     value={this.state.value}
                 /> */}
-                <BreadcrumbsDashUiComponents model={items} home={home} />
-                <h1>Hello, Dash!</h1>
+                {/* <BreadcrumbsDashUiComponents model={items} home={home} />
+                <h1>Hello, Dash!</h1> */}
                 {/* <h3 className="first">Uncontrolled</h3>
                 <TreeDashUiComponents value={data} {...this.state} />
                 <h3>Controlled</h3>
@@ -388,7 +389,7 @@ class App extends Component {
                         header="Click Load Button at Footer to Load More"
                     /> */}
                 {/* </div> */}
-                <WebcamDashUiComponents
+                {/* <WebcamDashUiComponents
                     id='webcam'
                     audio={false}
                     screenshotFormat="image/jpeg"
@@ -396,8 +397,9 @@ class App extends Component {
                     width={500}
                     height={300}
                     setProps={this.setProps}
-                />
-                <MicrophoneDashUiComponents/>
+                /> */}
+                {/* <MicrophoneDashUiComponents/> */}
+                <TrelloComponent draggable = {true}/>
             </div>
         );
     }

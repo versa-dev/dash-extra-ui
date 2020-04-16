@@ -266,6 +266,9 @@ app.layout = html.Div(children=[
     #     # className='', # css style
 
     # ),
+    ex.TrelloComponent(
+        draggable=True,
+    ),
     ex.CarouselComponent(
         id='input5',
         value=cars_carousel,
@@ -302,8 +305,9 @@ app.layout = html.Div(children=[
         rowsPerPageOptions=[10, 20, 30],
         template="FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink"
     ),
+    
     html.Div(id='output1'),
-    html.H4('Datascroller inline Preview'),
+    html.H4('Datascroller inline Preview  -------------------------------'),
     html.Div([
         ex.DataScrollerDashUiComponents(
             value=carData['data'],
