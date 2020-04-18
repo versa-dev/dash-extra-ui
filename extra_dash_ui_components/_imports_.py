@@ -31,6 +31,7 @@ from .Steps import Steps
 from .StepsComponent import StepsComponent
 from .UITreeNode import UITreeNode
 from .TreeDashUiComponents import TreeDashUiComponents
+from .TrelloComponent import TrelloComponent
 from .WebcamDashUiComponents import WebcamDashUiComponents
 
 __all__ = [
@@ -67,5 +68,6 @@ __all__ = [
     "StepsComponent",
     "UITreeNode",
     "TreeDashUiComponents",
+    "TrelloComponent",
     "WebcamDashUiComponents"
 ]
