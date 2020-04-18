@@ -207,6 +207,10 @@ app.layout = html.Div(children=[
         id='tree',
         value=data
     ),
+    html.H4('geolocator Preview'),
+    ex.GeolocatorComponent(
+        id='geolocator'
+    ),
 
     html.H4('breadcrumbs Preview'),
     ex.BreadcrumbsDashUiComponents(
@@ -379,4 +383,4 @@ def tree_output1(selectionKeys):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(host="0.0.0.0", port=int("8080"),debug=True)
