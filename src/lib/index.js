@@ -16,6 +16,8 @@ import MenuBarComponent from './components/MenuBar/MenuBarComponent';
 import PanelMenuComponent from './components/PanelMenu/PanelMenuComponent'; 
 import PDFViewerComponent from './components/PDFViewer/PDFViewerComponent.react';
 import GeolocatorComponent from './components/Geolocator/GeolocatorComponent.react';
+import TrelloComponent from './components/Trello/TrelloComponent';
+
 
 export {
     // ExtraDashUiComponents,
@@ -34,5 +36,6 @@ export {
     MenuBarComponent,
     PanelMenuComponent,
     PDFViewerComponent,
-    GeolocatorComponent
+    GeolocatorComponent,
+    TrelloComponent,
 };
