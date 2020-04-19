@@ -74,10 +74,11 @@ class Geolocator extends Component {
             var crd = pos.coords;
             if (this.state.coords.latitude === crd.latitude && this.state.coords.longitude === crd.longitude) {
               console.log('Congratulations, you reached the position');
-              navigator.geolocation.clearWatch(id);
+              navigator.geolocation.clearWatch(this.state.watchId);
             } else {
               this.onPositionSuccess(crd);
             }          
+	     this.props.setProps({coords:crd})
           },
           (err) => {
             console.warn('ERROR(' + err.code + '): ' + err.message);

@@ -6,6 +6,17 @@ class GeolocatorComponent extends Component {
 
   constructor(props) {
     super(props);
+
+    //this.state = {
+    //  coords : ''
+    //};
+   this.updateProps = this.updateProps.bind(this);
+  }
+
+  updateProps(coords){
+    //this.setState(newProps);
+     //this.props.coords=newProps;
+     this.props.setProps({coords})
   }
 
   render() {
@@ -21,6 +32,7 @@ class GeolocatorComponent extends Component {
           onSuccess = {this.props.onSuccess}
           onError = {this.props.onError}
           errorMsg = {this.props.errorMsg}
+          setProps = {this.updateProps}
         />
       </div>
     )
@@ -43,7 +55,8 @@ GeolocatorComponent.defaultProps = {
     isGeolocationEnabled: "Geolocation is not enabled"
   },
   onSuccess: function(success){ console.log(success) },
-  onError: function(error){ console.log(error)}
+  onError: function(error){ console.log(error)},
+  coords: null,
 };
 
 GeolocatorComponent.propTypes = {
@@ -56,6 +69,8 @@ GeolocatorComponent.propTypes = {
   errorMsg: PropTypes.object,
   onSuccess: PropTypes.func,
   onError: PropTypes.func,
+  coords: PropTypes.object,
+  setProps: PropTypes.func,
 };
 
 export default GeolocatorComponent;
