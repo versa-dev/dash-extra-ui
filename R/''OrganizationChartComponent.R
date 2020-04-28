@@ -9,7 +9,7 @@
     component <- list(
         props = props,
         type = 'OrganizationChartComponent',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'value', 'selectionMode', 'selection', 'className', 'style'),
         package = 'extraDashUiComponents'
         )

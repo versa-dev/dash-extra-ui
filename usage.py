@@ -2,7 +2,7 @@ import json
 
 import dash
 import dash_html_components as html
-import extra_dash_ui_components as ex
+import dash_extra_ui_components as ex
 from dash.dependencies import Input, Output, State
 
 from sample_data.carousel import cars_carousel
@@ -186,7 +186,7 @@ items = [
     {'label': 'Lionel Messi', 'url': 'https://en.wikipedia.org/wiki/Lionel_Messi'}
 ]
 home = {'icon': 'tumb tumb-home',
-        'url': 'https://github.com/nfrik/extra_dash_ui_components.git', 'label': 'Home'}
+        'url': 'https://github.com/nfrik/dash_extra_ui_components.git', 'label': 'Home'}
 
 first = 0
 rows = 10
@@ -368,11 +368,11 @@ def display_output(text, first, rows):
 #     return 'Rating: {}'.format(selection)
 
 
-@app.callback(Output('output5', 'children'), [Input('input5', 'clicked')])
-def display_output5(selection):
-    icon = f"Clicked on: {selection['action'] if selection else 'None'} icon"
-    item = f"  of {selection['item'] if selection else 'None'} item"
-    return icon + item
+# @app.callback(Output('output5', 'children'), [Input('input5', 'clicked')])
+# def display_output5(selection):
+#     icon = f"Clicked on: {selection['action'] if selection else 'None'} icon"
+#     item = f"  of {selection['item'] if selection else 'None'} item"
+#     return icon + item
 
 
 @app.callback(Output('output1', 'children'), [Input('paginator-default1', 'first'),

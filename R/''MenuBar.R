@@ -9,7 +9,7 @@
     component <- list(
         props = props,
         type = 'MenuBar',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'model', 'style', 'className'),
         package = 'extraDashUiComponents'
         )

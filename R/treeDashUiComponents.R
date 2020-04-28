@@ -9,9 +9,9 @@ treeDashUiComponents <- function(id=NULL, value=NULL, disabled=NULL, selectionMo
     component <- list(
         props = props,
         type = 'TreeDashUiComponents',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'value', 'disabled', 'selectionMode', 'selectionKeys', 'onSelectionChange', 'contextMenuSelectionKey', 'onContextMenuSelectionChange', 'expandedKeys', 'style', 'className', 'contentStyle', 'contentClassName', 'metaKeySelection', 'propagateSelectionUp', 'propagateSelectionDown', 'loading', 'loadingIcon', 'dragdropScope', 'filter', 'filterBy', 'filterMode', 'filterPlaceholder', 'nodeTemplate', 'onSelect', 'onUnselect', 'onExpand', 'onCollapse', 'onToggle', 'onDragDrop', 'onContextMenu'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))

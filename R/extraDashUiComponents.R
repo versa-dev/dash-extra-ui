@@ -9,7 +9,7 @@ extraDashUiComponents <- function(id=NULL, label=NULL, value=NULL) {
     component <- list(
         props = props,
         type = 'ExtraDashUiComponents',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'label', 'value'),
         package = 'extraDashUiComponents'
         )

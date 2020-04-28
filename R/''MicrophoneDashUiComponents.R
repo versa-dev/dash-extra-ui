@@ -9,7 +9,7 @@
     component <- list(
         props = props,
         type = 'MicrophoneDashUiComponents',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'backgroundColor', 'strokeColor', 'className', 'audioBitsPerSecond', 'mimeType', 'height', 'record', 'realData', 'recordedBlob', 'visualSetting', 'width'),
         package = 'extraDashUiComponents'
         )

@@ -9,9 +9,9 @@ menubarSub <- function(model=NULL, root=NULL, className=NULL, popup=NULL, onLeaf
     component <- list(
         props = props,
         type = 'MenubarSub',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('model', 'root', 'className', 'popup', 'onLeafClick', 'onKeyDown', 'parentActive'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))

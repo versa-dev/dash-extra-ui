@@ -9,9 +9,9 @@ stepsComponent <- function(id=NULL, model=NULL, activeIndex=NULL, readOnly=NULL,
     component <- list(
         props = props,
         type = 'StepsComponent',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'model', 'activeIndex', 'readOnly', 'style', 'className', 'onSelect'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))

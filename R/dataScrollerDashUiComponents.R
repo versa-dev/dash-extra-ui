@@ -9,9 +9,9 @@ dataScrollerDashUiComponents <- function(id=NULL, value=NULL, rows=NULL, inline=
     component <- list(
         props = props,
         type = 'DataScrollerDashUiComponents',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'value', 'rows', 'inline', 'scrollHeight', 'loader', 'buffer', 'style', 'className', 'onLazyLoad', 'itemTemplate', 'header', 'footer', 'lazy'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))

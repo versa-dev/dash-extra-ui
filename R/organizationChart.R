@@ -9,9 +9,9 @@ organizationChart <- function(id=NULL, value=NULL, style=NULL, className=NULL, s
     component <- list(
         props = props,
         type = 'OrganizationChart',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'value', 'style', 'className', 'selectionMode', 'selection', 'nodeTemplate', 'onSelectionChange', 'onNodeSelect', 'onNodeUnselect'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))

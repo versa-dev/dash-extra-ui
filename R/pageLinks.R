@@ -9,9 +9,9 @@ pageLinks <- function(id=NULL, value=NULL, page=NULL, onClick=NULL) {
     component <- list(
         props = props,
         type = 'PageLinks',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'value', 'page', 'onClick'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))

@@ -9,9 +9,9 @@ button <- function(label=NULL, icon=NULL, iconPos=NULL, tooltip=NULL, tooltipOpt
     component <- list(
         props = props,
         type = 'Button',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('label', 'icon', 'iconPos', 'tooltip', 'tooltipOptions'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))

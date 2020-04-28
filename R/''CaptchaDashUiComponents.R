@@ -9,7 +9,7 @@
     component <- list(
         props = props,
         type = 'CaptchaDashUiComponents',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'sitekey', 'theme', 'captchaType', 'size', 'index', 'language', 'onResponse', 'onExpire', 'responsetext'),
         package = 'extraDashUiComponents'
         )

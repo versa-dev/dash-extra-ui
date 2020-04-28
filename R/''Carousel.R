@@ -9,7 +9,7 @@
     component <- list(
         props = props,
         type = 'Carousel',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'value', 'page', 'header', 'footer', 'style', 'className', 'itemTemplate', 'circular', 'autoplayInterval', 'numVisible', 'numScroll', 'responsiveOptions', 'orientation', 'verticalViewPortHeight', 'contentClassName', 'containerClassName', 'dotsContainerClassName', 'onPageChange'),
         package = 'extraDashUiComponents'
         )

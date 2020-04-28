@@ -9,7 +9,7 @@
     component <- list(
         props = props,
         type = 'ListBoxItem',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('option', 'label', 'selected', 'tabIndex', 'onClick', 'onTouchEnd', 'template'),
         package = 'extraDashUiComponents'
         )

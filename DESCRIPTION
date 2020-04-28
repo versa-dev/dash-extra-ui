@@ -1,4 +1,4 @@
-Package: extraDashUiComponents
+Package: dashExtraUiComponents
 Title: A collection of useful UI components for building interactive Dash applications.
 Version: 0.0.2
 Description: A collection of useful UI components for building interactive Dash applications.
