@@ -78,7 +78,6 @@ class Geolocator extends Component {
             } else {
               this.onPositionSuccess(crd);
             }          
-	     this.props.setProps({coords:crd})
           },
           (err) => {
             console.warn('ERROR(' + err.code + '): ' + err.message);
@@ -100,7 +99,7 @@ class Geolocator extends Component {
       isGeolocationEnabled: true,
       positionError: null,
     })
-
+    this.props.getPosition(position)
     this.props.onSuccess(position)
   }
 
@@ -124,39 +123,14 @@ class Geolocator extends Component {
 
     return !this.state.isGeolocationAvailable ? (
       <div>        
-        {this.props.errorMsg.isGeolocationAvailable}
       </div>
     ) : !this.state.isGeolocationEnabled ? (
       <div>        
-        {this.props.errorMsg.isGeolocationEnabled}
       </div>
     ) : this.state.coords ? (
-      <table>
-        <tbody>
-          <tr>
-            <td>latitude</td>
-            <td>{this.state.coords.latitude}</td>
-          </tr>
-          <tr>
-            <td>longitude</td>
-            <td>{this.state.coords.longitude}</td>
-          </tr>
-          <tr>
-            <td>altitude</td>
-            <td>{this.state.coords.altitude}</td>
-          </tr>
-          <tr>
-            <td>heading</td>
-            <td>{this.state.coords.heading}</td>
-          </tr>
-          <tr>
-            <td>speed</td>
-            <td>{this.state.coords.speed}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div></div>
     ) : (
-      <div>Getting the location data&hellip; </div>
+      <div></div>
     );
   }
 }
