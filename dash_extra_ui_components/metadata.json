@@ -1470,21 +1470,19 @@
   "src/lib/components/Geolocator/GeolocatorComponent.react.js": {
     "description": "", 
     "displayName": "GeolocatorComponent", 
-    "methods": [
-      {
-        "name": "updateProps", 
-        "docblock": null, 
-        "modifiers": [], 
-        "params": [
-          {
-            "name": "coords", 
-            "type": null
-          }
-        ], 
-        "returns": null
-      }
-    ], 
+    "methods": [], 
     "props": {
+      "setProps": {
+        "type": {
+          "name": "func"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "() => {}", 
+          "computed": false
+        }
+      }, 
       "id": {
         "type": {
           "name": "string"
@@ -1594,13 +1592,6 @@
           "value": "null", 
           "computed": false
         }
-      }, 
-      "setProps": {
-        "type": {
-          "name": "func"
-        }, 
-        "required": false, 
-        "description": ""
       }
     }
   }, 
@@ -5638,10 +5629,32 @@
     }
   }, 
   "src/lib/components/Trello/TrelloComponent.js": {
-    "description": "Component to render a button element", 
+    "description": "", 
     "displayName": "TrelloComponent", 
     "methods": [], 
     "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "null", 
+          "computed": false
+        }
+      }, 
+      "value": {
+        "type": {
+          "name": "object"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "{}", 
+          "computed": false
+        }
+      }, 
       "draggable": {
         "type": {
           "name": "bool"
@@ -5727,6 +5740,138 @@
         "description": "", 
         "defaultValue": {
           "value": "true", 
+          "computed": false
+        }
+      }, 
+      "setProps": {
+        "type": {
+          "name": "func"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "() => {}", 
+          "computed": false
+        }
+      }, 
+      "changedData": {
+        "type": {
+          "name": "object"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "null", 
+          "computed": false
+        }
+      }, 
+      "cardId": {
+        "type": {
+          "name": "string"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "null", 
+          "computed": false
+        }
+      }, 
+      "landId": {
+        "type": {
+          "name": "string"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "null", 
+          "computed": false
+        }
+      }, 
+      "event": {
+        "type": {
+          "name": "string"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "null", 
+          "computed": false
+        }
+      }, 
+      "sourceLaneId": {
+        "type": {
+          "name": "string"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "null", 
+          "computed": false
+        }
+      }, 
+      "targetLaneId": {
+        "type": {
+          "name": "string"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "null", 
+          "computed": false
+        }
+      }, 
+      "position": {
+        "type": {
+          "name": "number"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "null", 
+          "computed": false
+        }
+      }, 
+      "cardDetails": {
+        "type": {
+          "name": "object"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "null", 
+          "computed": false
+        }
+      }, 
+      "landParams": {
+        "type": {
+          "name": "object"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "null", 
+          "computed": false
+        }
+      }, 
+      "metaData": {
+        "type": {
+          "name": "object"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "null", 
+          "computed": false
+        }
+      }, 
+      "card": {
+        "type": {
+          "name": "object"
+        }, 
+        "required": false, 
+        "description": "", 
+        "defaultValue": {
+          "value": "null", 
           "computed": false
         }
       }
