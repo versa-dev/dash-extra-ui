@@ -22,8 +22,9 @@ Get started with:
 10. Rating: https://github.com/primefaces/primereact
 11. Steps: https://github.com/primefaces/primereact
 12. Trello: https://github.com/rcdexta/react-trello
-13. Webcam: 
+13. Webcam: https://github.com/mozmorris/react-webcam
 
+Current implementation is not complete and some components might be only partially functional.
 
 ## Contributing
 
