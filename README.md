@@ -11,7 +11,7 @@ Get started with:
 ## Currently implemented the following components
 
 1. Carousel: https://github.com/primefaces/primereact
-2. Geolocator
+2. Geolocator: https://github.com/no23reason/react-geolocated
 3. ListBox: https://github.com/primefaces/primereact
 4. MenuBar: https://github.com/primefaces/primereact
 5. Mic
