@@ -8,7 +8,7 @@ Get started with:
 3. Run `python usage.py`
 4. Visit http://localhost:8080 in your web browser
 
-## Currently implemented the following components
+## Available components
 
 1. Carousel: https://github.com/primefaces/primereact
 2. Geolocator: https://github.com/no23reason/react-geolocated
