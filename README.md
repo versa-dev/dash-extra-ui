@@ -8,6 +8,23 @@ Get started with:
 3. Run `python usage.py`
 4. Visit http://localhost:8080 in your web browser
 
+## Currently implemented the following components
+
+Carousel: https://github.com/primefaces/primereact
+Geolocator
+ListBox: https://github.com/primefaces/primereact
+MenuBar: https://github.com/primefaces/primereact
+Mic
+OrganizationChart: https://github.com/primefaces/primereact
+PDFViewer
+Paginator: https://github.com/primefaces/primereact
+PanelMenu: https://github.com/primefaces/primereact
+Rating: https://github.com/primefaces/primereact
+Steps: https://github.com/primefaces/primereact
+Trello
+Webcam
+
+
 ## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md)
