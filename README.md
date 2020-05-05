@@ -4,7 +4,7 @@ dash_extra_ui_components is a Dash component library.
 
 Get started with:
 1. Install Dash and its dependencies: https://dash.plot.ly/installation
-2. pip install dash_extra_ui_components
+2. `pip install dash_extra_ui_components`
 3. Run `python usage.py`
 4. Visit http://localhost:8080 in your web browser
 
