@@ -14,15 +14,15 @@ Get started with:
 2. Geolocator: https://github.com/no23reason/react-geolocated
 3. ListBox: https://github.com/primefaces/primereact
 4. MenuBar: https://github.com/primefaces/primereact
-5. Mic
+5. Mic: https://github.com/hackingbeauty/react-mic
 6. OrganizationChart: https://github.com/primefaces/primereact
-7. PDFViewer
+7. PDFViewer: https://github.com/wojtekmaj/react-pdf
 8. Paginator: https://github.com/primefaces/primereact
 9. PanelMenu: https://github.com/primefaces/primereact
 10. Rating: https://github.com/primefaces/primereact
 11. Steps: https://github.com/primefaces/primereact
-12. Trello
-13. Webcam
+12. Trello: https://github.com/rcdexta/react-trello
+13. Webcam: 
 
 
 ## Contributing
