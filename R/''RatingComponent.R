@@ -9,7 +9,7 @@
     component <- list(
         props = props,
         type = 'RatingComponent',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'value', 'disabled', 'readonly', 'stars', 'cancel', 'style', 'className', 'tooltip', 'tooltipOptions'),
         package = 'extraDashUiComponents'
         )

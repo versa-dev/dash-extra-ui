@@ -9,7 +9,7 @@ import sys
 import importlib
 
 
-components_package = 'extra_dash_ui_components'
+components_package = 'dash_extra_ui_components'
 
 components_lib = importlib.import_module(components_package)
 

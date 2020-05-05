@@ -9,7 +9,7 @@
     component <- list(
         props = props,
         type = 'Steps',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'model', 'activeIndex', 'readOnly', 'style', 'className', 'onSelect'),
         package = 'extraDashUiComponents'
         )

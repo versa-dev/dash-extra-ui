@@ -9,9 +9,9 @@ prevPageLink <- function(id=NULL, disabled=NULL, onClick=NULL) {
     component <- list(
         props = props,
         type = 'PrevPageLink',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'disabled', 'onClick'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))

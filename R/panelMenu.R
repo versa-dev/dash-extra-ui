@@ -9,9 +9,9 @@ panelMenu <- function(id=NULL, model=NULL, style=NULL, className=NULL) {
     component <- list(
         props = props,
         type = 'PanelMenu',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'model', 'style', 'className'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))

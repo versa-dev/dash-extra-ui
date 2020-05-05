@@ -9,7 +9,7 @@
     component <- list(
         props = props,
         type = 'PDFViewerComponent',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('url', 'base64', 'page', 'scale', 'scaleStep', 'maxScale', 'minScale', 'css', 'navbarOnTop', 'hideZoom', 'hideRotation', 'protectContent'),
         package = 'extraDashUiComponents'
         )

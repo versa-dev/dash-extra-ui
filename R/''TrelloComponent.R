@@ -9,7 +9,7 @@
     component <- list(
         props = props,
         type = 'TrelloComponent',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('draggable', 'laneDraggable', 'cardDraggable', 'collapsibleLanes', 'editable', 'canAddLanes', 'hideCardDeleteIcon', 'editLaneTitle'),
         package = 'extraDashUiComponents'
         )

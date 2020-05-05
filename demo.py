@@ -2,7 +2,7 @@ import dash
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
-import extra_dash_ui_components as ex
+import dash_extra_ui_components as ex
 from sample_data.org_data import sample1, sample2
 from sample_data.list_component import cities, cars
 from sample_data.carousel import cars_carousel

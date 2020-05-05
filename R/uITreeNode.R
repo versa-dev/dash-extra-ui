@@ -9,9 +9,9 @@ uITreeNode <- function(node=NULL, index=NULL, last=NULL, parent=NULL, path=NULL,
     component <- list(
         props = props,
         type = 'UITreeNode',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('node', 'index', 'last', 'parent', 'path', 'disabled', 'selectionMode', 'selectionKeys', 'contextMenuSelectionKey', 'metaKeySelection', 'expandedKeys', 'propagateSelectionUp', 'propagateSelectionDown', 'dragdropScope', 'ariaLabel', 'ariaLabelledBy', 'nodeTemplate', 'isNodeLeaf', 'onSelect', 'onUnselect', 'onExpand', 'onCollapse', 'onToggle', 'onSelectionChange', 'onContextMenuSelectionChange', 'onPropagateUp', 'onDragStart', 'onDragEnd', 'onDrop', 'onDropPoint', 'onContextMenu'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))

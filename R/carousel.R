@@ -9,9 +9,9 @@ carousel <- function(id=NULL, value=NULL, page=NULL, header=NULL, footer=NULL, s
     component <- list(
         props = props,
         type = 'Carousel',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'value', 'page', 'header', 'footer', 'style', 'className', 'itemTemplate', 'circular', 'autoplayInterval', 'numVisible', 'numScroll', 'responsiveOptions', 'orientation', 'verticalViewPortHeight', 'contentClassName', 'containerClassName', 'dotsContainerClassName', 'onPageChange'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))

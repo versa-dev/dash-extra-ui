@@ -9,7 +9,7 @@
     component <- list(
         props = props,
         type = 'WebcamDashUiComponents',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'className', 'audio', 'height', 'width', 'screenshotWidth', 'screenshotHeight', 'screenshotFormat', 'screenshotQuality', 'screenshotInterval', 'screenshot'),
         package = 'extraDashUiComponents'
         )

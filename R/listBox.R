@@ -9,9 +9,9 @@ listBox <- function(id=NULL, value=NULL, options=NULL, optionLabel=NULL, itemTem
     component <- list(
         props = props,
         type = 'ListBox',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'value', 'options', 'optionLabel', 'itemTemplate', 'style', 'listStyle', 'className', 'dataKey', 'multiple', 'metaKeySelection', 'filter', 'tabIndex', 'tooltip', 'tooltipOptions', 'onChange', 'disabled', 'listContainerStyle'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))

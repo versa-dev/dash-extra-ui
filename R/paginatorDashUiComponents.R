@@ -9,9 +9,9 @@ paginatorDashUiComponents <- function(id=NULL, totalRecords=NULL, rows=NULL, fir
     component <- list(
         props = props,
         type = 'PaginatorDashUiComponents',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'totalRecords', 'rows', 'first', 'pageLinkSize', 'rowsPerPageOptions', 'style', 'className', 'template', 'onPageChange', 'leftContent', 'rightContent', 'currentPageReportTemplate', 'alwaysShow'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))

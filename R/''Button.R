@@ -9,7 +9,7 @@
     component <- list(
         props = props,
         type = 'Button',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('label', 'icon', 'iconPos', 'tooltip', 'tooltipOptions'),
         package = 'extraDashUiComponents'
         )

@@ -9,7 +9,7 @@
     component <- list(
         props = props,
         type = 'PageLinks',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'value', 'page', 'onClick'),
         package = 'extraDashUiComponents'
         )

@@ -9,7 +9,7 @@
     component <- list(
         props = props,
         type = 'InputText',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('onInput', 'onKeyPress', 'keyfilter', 'validateOnly', 'tooltip', 'tooltipOptions'),
         package = 'extraDashUiComponents'
         )

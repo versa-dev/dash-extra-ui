@@ -9,9 +9,9 @@ listBoxHeader <- function(filter=NULL, disabled=NULL, onFilter=NULL) {
     component <- list(
         props = props,
         type = 'ListBoxHeader',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('filter', 'disabled', 'onFilter'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))

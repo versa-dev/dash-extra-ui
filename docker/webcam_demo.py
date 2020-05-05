@@ -2,7 +2,7 @@ import dash
 import dash_html_components as html
 from dash.dependencies import Input, Output
 import os
-import extra_dash_ui_components as ex
+import dash_extra_ui_components as ex
 import flask
 # app = dash.Dash(__name__)
 

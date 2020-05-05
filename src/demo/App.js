@@ -150,7 +150,7 @@ class App extends Component {
 
         const home = {
             icon: 'tumb tumb-home',
-            url: 'https://github.com/nfrik/extra_dash_ui_components.git',
+            url: 'https://github.com/nfrik/dash_extra_ui_components.git',
             label: 'Home',
         };
 

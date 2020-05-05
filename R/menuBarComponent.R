@@ -9,9 +9,9 @@ menuBarComponent <- function(id=NULL, model=NULL, style=NULL, inputPlaceholder=N
     component <- list(
         props = props,
         type = 'MenuBarComponent',
-        namespace = 'extra_dash_ui_components',
+        namespace = 'dash_extra_ui_components',
         propNames = c('id', 'model', 'style', 'inputPlaceholder', 'btnicon', 'btnlabel', 'className', 'menubarItem', 'submenubarItem', 'inputTextBox', 'button', 'searchQuery', 'menubarInput', 'btnClick'),
-        package = 'extraDashUiComponents'
+        package = 'dashExtraUiComponents'
         )
 
     structure(component, class = c('dash_component', 'list'))
