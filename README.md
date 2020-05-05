@@ -10,19 +10,19 @@ Get started with:
 
 ## Currently implemented the following components
 
-Carousel: https://github.com/primefaces/primereact
-Geolocator
-ListBox: https://github.com/primefaces/primereact
-MenuBar: https://github.com/primefaces/primereact
-Mic
-OrganizationChart: https://github.com/primefaces/primereact
-PDFViewer
-Paginator: https://github.com/primefaces/primereact
-PanelMenu: https://github.com/primefaces/primereact
-Rating: https://github.com/primefaces/primereact
-Steps: https://github.com/primefaces/primereact
-Trello
-Webcam
+1. Carousel: https://github.com/primefaces/primereact
+2. Geolocator
+3. ListBox: https://github.com/primefaces/primereact
+4. MenuBar: https://github.com/primefaces/primereact
+5. Mic
+6. OrganizationChart: https://github.com/primefaces/primereact
+7. PDFViewer
+8. Paginator: https://github.com/primefaces/primereact
+9. PanelMenu: https://github.com/primefaces/primereact
+10. Rating: https://github.com/primefaces/primereact
+11. Steps: https://github.com/primefaces/primereact
+12. Trello
+13. Webcam
 
 
 ## Contributing
